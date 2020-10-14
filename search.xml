@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>软件记录</title>
-    <url>/2020/10/14/%E8%BD%AF%E4%BB%B6%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="dwm"><a href="#dwm" class="headerlink" title="dwm"></a>dwm</h3><h3 id="st"><a href="#st" class="headerlink" title="st"></a>st</h3><h3 id="ranger"><a href="#ranger" class="headerlink" title="ranger"></a>ranger</h3><h3 id="jpegoptim"><a href="#jpegoptim" class="headerlink" title="jpegoptim"></a>jpegoptim</h3><h3 id="ffmpeg"><a href="#ffmpeg" class="headerlink" title="ffmpeg"></a>ffmpeg</h3><h3 id="youtube-dl"><a href="#youtube-dl" class="headerlink" title="youtube-dl"></a>youtube-dl</h3><h3 id="aria2"><a href="#aria2" class="headerlink" title="aria2"></a>aria2</h3><h3 id="qbittorrent"><a href="#qbittorrent" class="headerlink" title="qbittorrent"></a>qbittorrent</h3><h3 id="powertill"><a href="#powertill" class="headerlink" title="powertill"></a>powertill</h3><h3 id="fzf"><a href="#fzf" class="headerlink" title="fzf"></a>fzf</h3><h3 id="fd"><a href="#fd" class="headerlink" title="fd"></a>fd</h3><h2 id="feh"><a href="#feh" class="headerlink" title="feh"></a>feh</h2>]]></content>
+    <title>网页收藏</title>
+    <url>/2020/10/14/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="Makedown语法说明"><a href="#Makedown语法说明" class="headerlink" title="Makedown语法说明"></a>Makedown语法说明</h3><p><a href="http://www.wowubuntu.com/markdown/index/">http://www.wowubuntu.com/markdown/index/</a></p>
+]]></content>
       <categories>
-        <category>记录</category>
+        <category>收藏</category>
       </categories>
       <tags>
-        <tag>软件</tag>
+        <tag>网页</tag>
       </tags>
   </entry>
   <entry>
@@ -30,15 +31,14 @@
 ]]></content>
   </entry>
   <entry>
-    <title>网页收藏</title>
-    <url>/2020/10/14/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="Makedown语法说明"><a href="#Makedown语法说明" class="headerlink" title="Makedown语法说明"></a>Makedown语法说明</h3><p><a href="http://www.wowubuntu.com/markdown/index/">http://www.wowubuntu.com/markdown/index/</a></p>
-]]></content>
+    <title>软件记录</title>
+    <url>/2020/10/14/%E8%BD%AF%E4%BB%B6%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="dwm"><a href="#dwm" class="headerlink" title="dwm"></a>dwm</h3><h3 id="st"><a href="#st" class="headerlink" title="st"></a>st</h3><h3 id="ranger"><a href="#ranger" class="headerlink" title="ranger"></a>ranger</h3><h3 id="jpegoptim"><a href="#jpegoptim" class="headerlink" title="jpegoptim"></a>jpegoptim</h3><h3 id="ffmpeg"><a href="#ffmpeg" class="headerlink" title="ffmpeg"></a>ffmpeg</h3><h3 id="youtube-dl"><a href="#youtube-dl" class="headerlink" title="youtube-dl"></a>youtube-dl</h3><h3 id="aria2"><a href="#aria2" class="headerlink" title="aria2"></a>aria2</h3><h3 id="qbittorrent"><a href="#qbittorrent" class="headerlink" title="qbittorrent"></a>qbittorrent</h3><h3 id="powertill"><a href="#powertill" class="headerlink" title="powertill"></a>powertill</h3><h3 id="fzf"><a href="#fzf" class="headerlink" title="fzf"></a>fzf</h3><h3 id="fd"><a href="#fd" class="headerlink" title="fd"></a>fd</h3><h2 id="feh"><a href="#feh" class="headerlink" title="feh"></a>feh</h2>]]></content>
       <categories>
-        <category>收藏</category>
+        <category>记录</category>
       </categories>
       <tags>
-        <tag>网页</tag>
+        <tag>软件</tag>
       </tags>
   </entry>
 </search>
