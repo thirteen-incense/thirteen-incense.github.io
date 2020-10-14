@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>aria2</title>
+    <url>/2020/10/14/aria2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>dwm</title>
     <url>/2020/10/14/dwm/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://dwm.suckless.org/">dwm</a>是一个简洁的平铺式窗口管理器<br>配置简单，使用便捷，没有多少依赖，占用内存非常小</p>
@@ -32,41 +43,19 @@
       </tags>
   </entry>
   <entry>
-    <title>feh</title>
-    <url>/2020/10/14/feh/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>aria2</title>
-    <url>/2020/10/14/aria2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ffmpeg</title>
-    <url>/2020/10/14/ffmpeg/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>fzf</title>
     <url>/2020/10/14/fzf/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>feh</title>
+    <url>/2020/10/14/feh/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
       <categories>
         <category>记录</category>
@@ -116,19 +105,8 @@
       </tags>
   </entry>
   <entry>
-    <title>qbittorrent</title>
-    <url>/2020/10/14/qbittorrent/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ranger</title>
-    <url>/2020/10/14/ranger/</url>
+    <title>ffmpeg</title>
+    <url>/2020/10/14/ffmpeg/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
       <categories>
         <category>记录</category>
@@ -159,10 +137,61 @@
       </tags>
   </entry>
   <entry>
+    <title>qbittorrent</title>
+    <url>/2020/10/14/qbittorrent/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ranger</title>
+    <url>/2020/10/14/ranger/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>scrot</title>
     <url>/2020/10/14/scrot/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>scrot是一个命名行截图软件支持延时截屏,调整品质/大小,命令行传递等功能</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scrot                         <span class="comment">#截下整个桌面</span></span><br><span class="line">scrot /home/code/1.jpg        <span class="comment">#命名并保存到指定文件夹</span></span><br><span class="line">scrot -s                      <span class="comment">#手动框选截图</span></span><br><span class="line">scrot -d NUM                  <span class="comment">#延迟NUM秒后截屏</span></span><br><span class="line">scrot -d NUM -c               <span class="comment">#显示延时的倒计时</span></span><br><span class="line">scrot -q NUM                  <span class="comment">#调整截屏质量(1~100,默认75)</span></span><br><span class="line">scrot -t NUM                  <span class="comment">#调整截屏尺寸(1~100)</span></span><br><span class="line">scrot -e <span class="string">&#x27;mv $f ~/wallpaper&#x27;</span>  <span class="comment">#将截取的截屏传递给其它命令($f)</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网页收藏</title>
+    <url>/2020/10/14/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="Makedown语法说明"><a href="#Makedown语法说明" class="headerlink" title="Makedown语法说明"></a>Makedown语法说明</h3><p><a href="http://www.wowubuntu.com/markdown/index/">http://www.wowubuntu.com/markdown/index/</a></p>
+]]></content>
+      <categories>
+        <category>收藏</category>
+      </categories>
+      <tags>
+        <tag>网页</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>youtube-dl</title>
+    <url>/2020/10/14/youtube-dl/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl</a>命令行视频下载软件，不止于youtube</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S youtube-dl</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl [url]                           <span class="comment">#自动选择一个最清晰的格式下载</span></span><br><span class="line">youtube-dl -F [url]                        <span class="comment">#查看视频格式选项</span></span><br><span class="line">youtube-dl -f [number] [url]               <span class="comment">#选择指定格式下载</span></span><br><span class="line">youtube-dl -f [number]+[number] [url]      <span class="comment">#组合下载</span></span><br><span class="line">youtube [palylist_url]                     <span class="comment">#下载视频列表所有视频</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-U, --update            <span class="comment">#更新</span></span><br><span class="line">--proxy URL             <span class="comment">#例如socks5://127.0.0.1:1080/</span></span><br><span class="line">-r, --limit-rate RATE   <span class="comment">#设置最大下载速度(e.g. 50K or 4.2M)</span></span><br><span class="line">-f, --format FORMAT     <span class="comment">#下载指定序号的文件</span></span><br><span class="line">-F, --list-formats      <span class="comment">#列出所有视频格式</span></span><br><span class="line">--list-subs             <span class="comment">#列出所有可用字幕</span></span><br><span class="line">-u, --username USERNAME <span class="comment">#ID</span></span><br><span class="line">-p, --password PASSWORD <span class="comment">#密码</span></span><br><span class="line">--skip-download         <span class="comment">#跳过下载</span></span><br><span class="line">—-write-sub             <span class="comment">#写入字幕,即把字幕下载(默认为.vvt)</span></span><br><span class="line">--sub-format            <span class="comment">#指定字幕格式,按顺序选,不存在则选下一个</span></span><br><span class="line">--convert-subs          <span class="comment">#转换字幕,通用为.srt或.ass</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -185,35 +214,6 @@
       </categories>
       <tags>
         <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>youtube-dl</title>
-    <url>/2020/10/14/youtube-dl/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl</a>命令行视频下载软件，不止于youtube</p>
-<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S youtube-dl</span><br></pre></td></tr></table></figure>
-
-<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl [url]                           <span class="comment">#自动选择一个最清晰的格式下载</span></span><br><span class="line">youtube-dl -F [url]                        <span class="comment">#查看视频格式选项</span></span><br><span class="line">youtube-dl -f [number] [url]               <span class="comment">#选择指定格式下载</span></span><br><span class="line">youtube-dl -f [number]+[number] [url]      <span class="comment">#组合下载</span></span><br><span class="line">youtube [palylist_url]                     <span class="comment">#下载视频列表所有视频</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-U, --update            <span class="comment">#更新</span></span><br><span class="line">--proxy URL             <span class="comment">#例如socks5://127.0.0.1:1080/</span></span><br><span class="line">-r, --limit-rate RATE   <span class="comment">#设置最大下载速度(e.g. 50K or 4.2M)</span></span><br><span class="line">-f, --format FORMAT     <span class="comment">#下载指定序号的文件</span></span><br><span class="line">-F, --list-formats      <span class="comment">#列出所有视频格式</span></span><br><span class="line">--list-subs             <span class="comment">#列出所有可用字幕</span></span><br><span class="line">-u, --username USERNAME <span class="comment">#ID</span></span><br><span class="line">-p, --password PASSWORD <span class="comment">#密码</span></span><br><span class="line">--skip-download         <span class="comment">#跳过下载</span></span><br><span class="line">—-write-sub             <span class="comment">#写入字幕,即把字幕下载(默认为.vvt)</span></span><br><span class="line">--sub-format            <span class="comment">#指定字幕格式,按顺序选,不存在则选下一个</span></span><br><span class="line">--convert-subs          <span class="comment">#转换字幕,通用为.srt或.ass</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网页收藏</title>
-    <url>/2020/10/14/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="Makedown语法说明"><a href="#Makedown语法说明" class="headerlink" title="Makedown语法说明"></a>Makedown语法说明</h3><p><a href="http://www.wowubuntu.com/markdown/index/">http://www.wowubuntu.com/markdown/index/</a></p>
-]]></content>
-      <categories>
-        <category>收藏</category>
-      </categories>
-      <tags>
-        <tag>网页</tag>
       </tags>
   </entry>
 </search>
