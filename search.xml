@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>dwm</title>
+    <url>/2020/10/14/dwm/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://dwm.suckless.org/">dwm</a>是一个简洁的平铺式窗口管理器<br>配置简单，使用便捷，没有多少依赖，占用内存非常小</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git.suckless.org/dwm</span><br><span class="line"><span class="built_in">cd</span> dwm</span><br><span class="line">sudo make clean install</span><br></pre></td></tr></table></figure>
+<h4 id="搭配软件"><a href="#搭配软件" class="headerlink" title="搭配软件"></a>搭配软件</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S rofi           <span class="comment">#弹出式窗口切换器</span></span><br><span class="line">sudo pacman -S picom          <span class="comment">#X的合成器,可以帮你设置透明度,阴影效果,窗口切换效果等</span></span><br><span class="line">sudo pacman -S alsa-utils     <span class="comment">#是Linux中提供声音设备驱动的内核组件</span></span><br><span class="line">sudo pacman -S feh            <span class="comment">#快速,轻量级的图像查看器</span></span><br><span class="line">sudo pacman -S ranger         <span class="comment">#具有VI键绑定的控制台文件管理器</span></span><br></pre></td></tr></table></figure>
+<h4 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h4><p>patch &lt; xxx.diff #打补丁</p>
+<p><a href="https://dwm.suckless.org/patches/alpha/">alpha</a>使dwm的菜单栏变透明<br><a href="https://dwm.suckless.org/patches/autostart/">autostart</a>在dwm启动时自动运行指定的脚本<br><a href="https://dwm.suckless.org/patches/pertag/">pertag</a>保持每个标签的布局<br><a href="https://dwm.suckless.org/patches/scratchpad/">scratchpad</a>生成一个可隐藏的所有标签共用的窗口可以当做便签</p>
+<h4 id="fcitx5"><a href="#fcitx5" class="headerlink" title="fcitx5"></a>fcitx5</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S fcitx5-im fcitx5-chinese-addons</span><br></pre></td></tr></table></figure>
+
+<h4 id="xinitrc的配置"><a href="#xinitrc的配置" class="headerlink" title=".xinitrc的配置"></a>.xinitrc的配置</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#fcitx5</span></span><br><span class="line">INPUT_METHOD  DEFAULT=fcitx5</span><br><span class="line">GTK_IM_MODULE DEFAULT=fcitx5</span><br><span class="line">QT_IM_MODULE  DEFAULT=fcitx5</span><br><span class="line">XMODIFIERS    DEFAULT=\@im=fcitx5</span><br><span class="line">fcitx5 &amp;</span><br><span class="line"></span><br><span class="line"><span class="comment">#picom</span></span><br><span class="line">picom &amp;</span><br><span class="line"></span><br><span class="line"><span class="comment">#dwm</span></span><br><span class="line"><span class="built_in">exec</span> dwm</span><br></pre></td></tr></table></figure>
+
+<h4 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h4><h5 id="emacs-daemon-sh"><a href="#emacs-daemon-sh" class="headerlink" title="emacs-daemon.sh"></a>emacs-daemon.sh</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">cd</span> ~/ &amp;&amp; emacs --daemon</span><br></pre></td></tr></table></figure>
+
+<h5 id="touchpad-sh"><a href="#touchpad-sh" class="headerlink" title="touchpad.sh"></a>touchpad.sh</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">id=`xinput list | grep <span class="string">&quot;Touchpad&quot;</span> | cut -d<span class="string">&#x27;=&#x27;</span> -f2 | cut -d<span class="string">&#x27;[&#x27;</span> -f1`</span><br><span class="line"></span><br><span class="line">flag=`xinput list-props <span class="variable">$id</span> | grep <span class="string">&quot;Device Enabled &quot;</span> | cut -c 24-24`</span><br><span class="line"><span class="keyword">if</span></span><br><span class="line">  [ <span class="string">&quot;<span class="variable">$flag</span>&quot;</span> = 0 ]; <span class="keyword">then</span></span><br><span class="line">  n=1</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  n=0</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">xinput set-prop <span class="variable">$id</span> <span class="string">&quot;Device Enabled&quot;</span> <span class="variable">$n</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="volup-sh"><a href="#volup-sh" class="headerlink" title="volup.sh"></a>volup.sh</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">amixer -qM <span class="built_in">set</span> Master 10%+ umute</span><br></pre></td></tr></table></figure>
+
+<h5 id="voldown-sh"><a href="#voldown-sh" class="headerlink" title="voldown.sh"></a>voldown.sh</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">amixer -qM <span class="built_in">set</span> Master 10%- umute</span><br></pre></td></tr></table></figure>
+
+<h5 id="wallpapers-sh"><a href="#wallpapers-sh" class="headerlink" title="wallpapers.sh"></a>wallpapers.sh</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">let</span> n=0</span><br><span class="line">files=(<span class="variable">$HOME</span>/wallpapers/*.jpg)</span><br><span class="line">count=<span class="variable">$&#123;#files[@]&#125;</span></span><br><span class="line"><span class="keyword">while</span> [ 1 ]</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">  <span class="built_in">let</span> <span class="string">&quot;n=<span class="subst">$((RANDOM %count)</span>)&quot;</span></span><br><span class="line">  file=<span class="string">&quot;<span class="variable">$&#123;files[$n]&#125;</span>&quot;</span></span><br><span class="line">  feh --bg-fill <span class="string">&quot;<span class="variable">$file</span>&quot;</span> &amp;</span><br><span class="line">  sleep 1m</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="autostart-sh"><a href="#autostart-sh" class="headerlink" title="autostart.sh"></a>autostart.sh</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash </span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">true</span> </span><br><span class="line"><span class="keyword">do</span></span><br><span class="line"><span class="function"><span class="title">print_date</span></span>()&#123;</span><br><span class="line">date <span class="string">&#x27;+%Y年%m月%d日 %H:%M&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">clock=$(date <span class="string">&#x27;+%I&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">case</span> <span class="string">&quot;<span class="variable">$clock</span>&quot;</span> <span class="keyword">in</span></span><br><span class="line">	<span class="string">&quot;00&quot;</span>) clock_icon=<span class="string">&quot;🕛&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;01&quot;</span>) clock_icon=<span class="string">&quot;🕐&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;02&quot;</span>) clock_icon=<span class="string">&quot;🕑&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;03&quot;</span>) clock_icon=<span class="string">&quot;🕒&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;04&quot;</span>) clock_icon=<span class="string">&quot;🕓&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;05&quot;</span>) clock_icon=<span class="string">&quot;🕔&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;06&quot;</span>) clock_icon=<span class="string">&quot;🕕&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;07&quot;</span>) clock_icon=<span class="string">&quot;🕖&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;08&quot;</span>) clock_icon=<span class="string">&quot;🕗&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;09&quot;</span>) clock_icon=<span class="string">&quot;🕘&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;10&quot;</span>) clock_icon=<span class="string">&quot;🕙&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;11&quot;</span>) clock_icon=<span class="string">&quot;🕚&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;12&quot;</span>) clock_icon=<span class="string">&quot;🕛&quot;</span> ;;</span><br><span class="line"><span class="keyword">esac</span></span><br><span class="line"></span><br><span class="line">LOCALTIME=$(date +<span class="string">&quot;🗓:%Y-%m-%d %u,<span class="variable">$&#123;clock_icon&#125;</span>:%H:%M&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">status_icon=<span class="string">&quot;🔋&quot;</span></span><br><span class="line">power=$(cat /sys/class/power_supply/BAT0/capacity)</span><br><span class="line">power_status=<span class="variable">$&#123;status_icon&#125;</span>:<span class="variable">$&#123;power&#125;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">vol=$(amixer get Master | tail -n1 | sed -r <span class="string">&#x27;s/.*\[(.*)%\].*/\1/&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$vol</span>&quot;</span> -eq <span class="string">&quot;0&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">    icon=<span class="string">&quot;🔇&quot;</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">&quot;<span class="variable">$vol</span>&quot;</span> -gt <span class="string">&quot;70&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">	icon=<span class="string">&quot;🔊&quot;</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">&quot;<span class="variable">$vol</span>&quot;</span> -lt <span class="string">&quot;30&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">	icon=<span class="string">&quot;🔈&quot;</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	icon=<span class="string">&quot;🔉&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">vol_status=<span class="string">&quot;<span class="variable">$icon</span>:<span class="variable">$vol</span>%&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">update</span></span>() &#123;</span><br><span class="line">    sum=0</span><br><span class="line">    <span class="keyword">for</span> arg; <span class="keyword">do</span></span><br><span class="line">        <span class="built_in">read</span> -r i &lt; <span class="string">&quot;<span class="variable">$arg</span>&quot;</span></span><br><span class="line">        sum=$(( sum + i ))</span><br><span class="line">    <span class="keyword">done</span></span><br><span class="line">    cache=<span class="variable">$&#123;XDG_CACHE_HOME:-<span class="variable">$HOME</span>/.cache&#125;</span>/<span class="variable">$&#123;1##*/&#125;</span></span><br><span class="line">    [ -f <span class="string">&quot;<span class="variable">$cache</span>&quot;</span> ] &amp;&amp; <span class="built_in">read</span> -r old &lt; <span class="string">&quot;<span class="variable">$cache</span>&quot;</span> || old=0</span><br><span class="line">    <span class="built_in">printf</span> %d\\n <span class="string">&quot;<span class="variable">$sum</span>&quot;</span> &gt; <span class="string">&quot;<span class="variable">$cache</span>&quot;</span></span><br><span class="line">    <span class="built_in">printf</span> %d\\n $(( sum - old ))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">RX=$(update /sys/class/net/[ew]*/statistics/rx_bytes)</span><br><span class="line">TX=$(update /sys/class/net/[ew]*/statistics/tx_bytes)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 换算单位</span></span><br><span class="line"><span class="keyword">if</span> [[ <span class="variable">$RX</span> -lt 1024 ]];<span class="keyword">then</span></span><br><span class="line">    <span class="comment"># 如果接收速率小于1024,则单位为B/s</span></span><br><span class="line">    RX=<span class="string">&quot;<span class="variable">$&#123;RX&#125;</span>B/s&quot;</span></span><br><span class="line"><span class="keyword">elif</span> [[ <span class="variable">$RX</span> -gt 1048576 ]];<span class="keyword">then</span></span><br><span class="line">    <span class="comment"># 否则如果接收速率大于 1048576,则改变单位为MB/s</span></span><br><span class="line">    RX=$(<span class="built_in">echo</span> <span class="variable">$RX</span> | awk <span class="string">&#x27;&#123;print $1/1048576 &quot;MB/s&quot;&#125;&#x27;</span>)</span><br><span class="line">    RX=$(<span class="built_in">printf</span> <span class="string">&quot;%.2fMB/s&quot;</span> <span class="variable">$RX</span>) </span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="comment"># 否则如果接收速率大于1024但小于1048576,则单位为KB/s</span></span><br><span class="line">    RX=$(<span class="built_in">echo</span> <span class="variable">$RX</span> | awk <span class="string">&#x27;&#123;print $1/1024 &quot;KB/s&quot;&#125;&#x27;</span>)</span><br><span class="line">    RX=$(<span class="built_in">printf</span> <span class="string">&quot;%.2fKB/s&quot;</span> <span class="variable">$RX</span>)</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 换算单位</span></span><br><span class="line"><span class="keyword">if</span> [[ <span class="variable">$TX</span> -lt 1024 ]];<span class="keyword">then</span></span><br><span class="line">    <span class="comment"># 如果发送速率小于1024,则单位为B/s</span></span><br><span class="line">    TX=<span class="string">&quot;<span class="variable">$&#123;TX&#125;</span>B/s&quot;</span></span><br><span class="line"><span class="keyword">elif</span> [[ <span class="variable">$TX</span> -gt 1048576 ]];<span class="keyword">then</span></span><br><span class="line">    <span class="comment"># 否则如果发送速率大于 1048576,则改变单位为MB/s</span></span><br><span class="line">    TX=$(<span class="built_in">echo</span> <span class="variable">$TX</span> | awk <span class="string">&#x27;&#123;print $1/1048576 &quot;MB/s&quot;&#125;&#x27;</span>)</span><br><span class="line">    TX=$(<span class="built_in">printf</span> <span class="string">&quot;%.2fMB/s&quot;</span> <span class="variable">$TX</span>)</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="comment"># 否则如果发送速率大于1024但小于1048576,则单位为KB/s</span></span><br><span class="line">    TX=$(<span class="built_in">echo</span> <span class="variable">$TX</span> | awk <span class="string">&#x27;&#123;print $1/1024 &quot;KB/s&quot;&#125;&#x27;</span>)</span><br><span class="line">    TX=$(<span class="built_in">printf</span> <span class="string">&quot;%.2fKB/s&quot;</span> <span class="variable">$TX</span>)</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#TX_f=$(printf &quot;%.2&quot; $TX)</span></span><br><span class="line"><span class="comment">#RX_f=$(printf &quot;%.2&quot; $RX)</span></span><br><span class="line"></span><br><span class="line">NetRraf=<span class="string">&quot;⏫:<span class="variable">$TX</span> ⏬:<span class="variable">$RX</span>&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">CHARGE=$(cat /sys/class/power_supply/BAT0/capacity)</span><br><span class="line">STATUS=$(cat /sys/class/power_supply/BAT0/status)</span><br><span class="line"></span><br><span class="line">total=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $2&#125;&#x27;</span>)</span><br><span class="line">used=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $3&#125;&#x27;</span>)</span><br><span class="line">free=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $4&#125;&#x27;</span>)</span><br><span class="line">shared=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $5&#125;&#x27;</span>)</span><br><span class="line">buff=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $6&#125;&#x27;</span>)</span><br><span class="line">available=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $7&#125;&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">max_light=$(cat /sys/class/backlight/amdgpu_bl0/max_brightness)</span><br><span class="line">light=$(cat /sys/class/backlight/amdgpu_bl0/brightness)</span><br><span class="line">light_status=☀:$(<span class="built_in">echo</span> <span class="variable">$light</span> <span class="variable">$max_light</span> | awk <span class="string">&#x27;&#123;printf &quot;%d\n&quot;,$1/$2*100&#125;&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 得到ip</span></span><br><span class="line">ip=`ip addr show eth0 | awk <span class="string">&#x27; !/127.0.0.1/ &amp;&amp; /inet/ &#123; gsub(/\/.*/, &quot;&quot;, $2); print &quot;&quot;$2 &#125;&#x27;</span>`</span><br><span class="line"><span class="comment">#echo $ip</span></span><br><span class="line">ip_index=`<span class="built_in">echo</span> <span class="variable">$ip</span> | awk -F <span class="string">&#x27;.&#x27;</span> <span class="string">&#x27;&#123;print $4&#125;&#x27;</span>`</span><br><span class="line"></span><br><span class="line"><span class="comment">#计算cpu使用率</span></span><br><span class="line">cpu=`top -b -n1 | fgrep <span class="string">&quot;Cpu(s)&quot;</span> | tail -1 | awk -F<span class="string">&#x27;id,&#x27;</span> <span class="string">&#x27;&#123;split($1, vs, &quot;,&quot;); v=vs[length(vs)]; sub(/\s+/, &quot;&quot;, v);sub(/\s+/, &quot;&quot;, v); printf &quot;%d&quot;, 100-v;&#125;&#x27;</span>`</span><br><span class="line"><span class="comment">#echo $cpu</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#统计内存使用率</span></span><br><span class="line">mem_used_persent=`free -m | awk -F <span class="string">&#x27;[ :]+&#x27;</span> <span class="string">&#x27;NR==2&#123;printf &quot;%d&quot;, ($2-$7)/$2*100&#125;&#x27;</span>`</span><br><span class="line"><span class="comment">#echo $mem_used_persent</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">xsetroot -name <span class="string">&quot;<span class="variable">$&#123;NetRraf&#125;</span>,<span class="variable">$&#123;available&#125;</span>M,<span class="variable">$&#123;cpu&#125;</span>%,<span class="variable">$&#123;LOCALTIME&#125;</span>,<span class="variable">$&#123;light_status&#125;</span>%,<span class="variable">$&#123;vol_status&#125;</span>,<span class="variable">$&#123;power_status&#125;</span>%&quot;</span> </span><br><span class="line">sleep 1</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>feh</title>
+    <url>/2020/10/14/feh/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ffmpeg</title>
+    <url>/2020/10/14/ffmpeg/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>fzf</title>
+    <url>/2020/10/14/fzf/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/10/14/hello-world/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -19,6 +83,128 @@
 ]]></content>
   </entry>
   <entry>
+    <title>jepgoptim</title>
+    <url>/2020/10/14/jepgoptim/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>powertill</title>
+    <url>/2020/10/14/powertill/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>qbittorrent</title>
+    <url>/2020/10/14/qbittorrent/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ranger</title>
+    <url>/2020/10/14/ranger/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>aria2</title>
+    <url>/2020/10/14/aria2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>rofi</title>
+    <url>/2020/10/14/rofi/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/davatorium/rofi">rofi</a>窗口切换器,应用程序启动器和dmenu替换</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S rofi</span><br></pre></td></tr></table></figure>
+
+<h4 id="生成配置文件"><a href="#生成配置文件" class="headerlink" title="生成配置文件"></a>生成配置文件</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir -p ~/.config/rofi</span><br><span class="line">rofi -dump-config &gt; ~/.config/rofi/config.rasi</span><br></pre></td></tr></table></figure>
+<p>可以修改文件名来覆盖默认参数</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mv config.rasi one-theme.rasi</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用配置"><a href="#使用配置" class="headerlink" title="使用配置"></a>使用配置</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rofi -show run  -theme one-theme.rasi</span><br><span class="line">rofi -show drun -theme one-theme.rasi</span><br></pre></td></tr></table></figure>
+
+<h4 id="选择主题"><a href="#选择主题" class="headerlink" title="选择主题"></a>选择主题</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rofi-theme-selector       <span class="comment">#Alt+A确认</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>scrot</title>
+    <url>/2020/10/14/scrot/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>scrot是一个命名行截图软件支持延时截屏,调整品质/大小,命令行传递等功能</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scrot                         <span class="comment">#截下整个桌面</span></span><br><span class="line">scrot /home/code/1.jpg        <span class="comment">#命名并保存到指定文件夹</span></span><br><span class="line">scrot -s                      <span class="comment">#手动框选截图</span></span><br><span class="line">scrot -d NUM                  <span class="comment">#延迟NUM秒后截屏</span></span><br><span class="line">scrot -d NUM -c               <span class="comment">#显示延时的倒计时</span></span><br><span class="line">scrot -q NUM                  <span class="comment">#调整截屏质量(1~100,默认75)</span></span><br><span class="line">scrot -t NUM                  <span class="comment">#调整截屏尺寸(1~100)</span></span><br><span class="line">scrot -e <span class="string">&#x27;mv $f ~/wallpaper&#x27;</span>  <span class="comment">#将截取的截屏传递给其它命令($f)</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>st</title>
+    <url>/2020/10/14/st/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://st.suckless.org/">st</a>是一个极轻量的虚拟终端</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git.suckless.org/st</span><br><span class="line"><span class="built_in">cd</span> st</span><br><span class="line">sudo make clean install</span><br></pre></td></tr></table></figure>
+
+<h4 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h4><p>pacth &lt; xxx.diff</p>
+<p><a href="https://st.suckless.org/patches/alpha/">alpha</a>实现透明效果<br><a href="https://st.suckless.org/patches/vim_browse/">vimBrowse</a>vim浏览补丁提供了在终端历史记录缓冲区中移动，使用类似于VIM的动作<br><a href="https://st.suckless.org/patches/anysize/">anysize</a>可以使用任意大小字体<br><a href="https://st.suckless.org/patches/hidecursor/">hidecursor</a>当有键盘操作时隐藏鼠标<br><a href="https://st.suckless.org/patches/scrollback/">scrollback</a>可以用键盘回滚终端<br><a href="https://st.suckless.org/patches/scrollback/">scrollback-mouse</a>可以用鼠标回滚终端<br><a href="https://st.suckless.org/patches/dracula/">dracula</a>配色方案,应用后仅更改终端颜色</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>youtube-dl</title>
+    <url>/2020/10/14/youtube-dl/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl</a>命令行视频下载软件，不止于youtube</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S youtube-dl</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl [url]                           <span class="comment">#自动选择一个最清晰的格式下载</span></span><br><span class="line">youtube-dl -F [url]                        <span class="comment">#查看视频格式选项</span></span><br><span class="line">youtube-dl -f [number] [url]               <span class="comment">#选择指定格式下载</span></span><br><span class="line">youtube-dl -f [number]+[number] [url]      <span class="comment">#组合下载</span></span><br><span class="line">youtube [palylist_url]                     <span class="comment">#下载视频列表所有视频</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-U, --update            <span class="comment">#更新</span></span><br><span class="line">--proxy URL             <span class="comment">#例如socks5://127.0.0.1:1080/</span></span><br><span class="line">-r, --limit-rate RATE   <span class="comment">#设置最大下载速度(e.g. 50K or 4.2M)</span></span><br><span class="line">-f, --format FORMAT     <span class="comment">#下载指定序号的文件</span></span><br><span class="line">-F, --list-formats      <span class="comment">#列出所有视频格式</span></span><br><span class="line">--list-subs             <span class="comment">#列出所有可用字幕</span></span><br><span class="line">-u, --username USERNAME <span class="comment">#ID</span></span><br><span class="line">-p, --password PASSWORD <span class="comment">#密码</span></span><br><span class="line">--skip-download         <span class="comment">#跳过下载</span></span><br><span class="line">—-write-sub             <span class="comment">#写入字幕,即把字幕下载(默认为.vvt)</span></span><br><span class="line">--sub-format            <span class="comment">#指定字幕格式,按顺序选,不存在则选下一个</span></span><br><span class="line">--convert-subs          <span class="comment">#转换字幕,通用为.srt或.ass</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网页收藏</title>
     <url>/2020/10/14/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="Makedown语法说明"><a href="#Makedown语法说明" class="headerlink" title="Makedown语法说明"></a>Makedown语法说明</h3><p><a href="http://www.wowubuntu.com/markdown/index/">http://www.wowubuntu.com/markdown/index/</a></p>
@@ -28,17 +214,6 @@
       </categories>
       <tags>
         <tag>网页</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件记录</title>
-    <url>/2020/10/14/%E8%BD%AF%E4%BB%B6%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="dwm"><a href="#dwm" class="headerlink" title="dwm"></a>dwm</h3><h3 id="st"><a href="#st" class="headerlink" title="st"></a>st</h3><h3 id="ranger"><a href="#ranger" class="headerlink" title="ranger"></a>ranger</h3><h3 id="jpegoptim"><a href="#jpegoptim" class="headerlink" title="jpegoptim"></a>jpegoptim</h3><h3 id="ffmpeg"><a href="#ffmpeg" class="headerlink" title="ffmpeg"></a>ffmpeg</h3><h3 id="youtube-dl"><a href="#youtube-dl" class="headerlink" title="youtube-dl"></a>youtube-dl</h3><h3 id="aria2"><a href="#aria2" class="headerlink" title="aria2"></a>aria2</h3><h3 id="qbittorrent"><a href="#qbittorrent" class="headerlink" title="qbittorrent"></a>qbittorrent</h3><h3 id="powertill"><a href="#powertill" class="headerlink" title="powertill"></a>powertill</h3><h3 id="fzf"><a href="#fzf" class="headerlink" title="fzf"></a>fzf</h3><h3 id="fd"><a href="#fd" class="headerlink" title="fd"></a>fd</h3><h2 id="feh"><a href="#feh" class="headerlink" title="feh"></a>feh</h2>]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
       </tags>
   </entry>
 </search>

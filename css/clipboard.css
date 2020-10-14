@@ -33,3 +33,15 @@
 .article pre:hover .btn-copy {
   opacity: 1;
 }
+::selection {
+  background: #f0ffff;
+color
+}
+::-moz-selection {
+  background: #f0ffff;
+color
+}
+::-webkit-selection {
+  background: #f0ffff;
+color
+}
