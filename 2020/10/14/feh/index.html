@@ -74,7 +74,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">0</span>
+            <span class="post-count">285</span>
         </span>
     </span>
 
@@ -90,13 +90,18 @@
  
     </div>
       
+    <div class="tocbot"></div>
+
 
 
 
   
     <div class="article-entry" itemprop="articleBody">
        
-   
+  <p><a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Feh">feh</a>是一款轻巧而功能强大的图像查看器，也可用于管理缺少此类功能的独立窗口管理器的桌面壁纸</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S feh</span><br></pre></td></tr></table></figure>
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">feh *                          <span class="comment">#可查看当前目录和当前子目录的所有图片</span></span><br><span class="line">feh -D 2 *.jpg                 <span class="comment">#2秒一张幻灯片播放</span></span><br><span class="line">feh -F                         <span class="comment">#全屏</span></span><br><span class="line">feh -g 1920x1080               <span class="comment">#按规定尺寸播放</span></span><br><span class="line">feh --list                     <span class="comment">#查看图片信息</span></span><br><span class="line">fen --bg-fill                  <span class="comment">#全屏图片作为背景</span></span><br><span class="line">feh -S                         <span class="comment">#排序,可按照 name, filename, width, height, pixels,size, format 七种方式排序</span></span><br><span class="line">feh --cycle-once -FD 1 *.jpg   <span class="comment">#循环一次后即结束播放</span></span><br><span class="line">feh -t -E 128 -y 128 -W 1024 -H 1024 wallpaper</span><br><span class="line"><span class="comment">#-t 是生成缩略图 -E 是缩略图的高度 -y是缩略图宽度 -W 是拼接后的照片的宽度 -H是拼接后的照片的高度 指定wallpaper文件夹</span></span><br><span class="line">feh -irF  -O index.jpg wallpaper</span><br><span class="line"><span class="comment">#-r 递归所指定目录下所有子目录，-i 是生成索引，-F全屏</span></span><br><span class="line">feh -m -X -E 108 -y 192 -H 1080 -W 1920 -o montage.jpg wallpaper</span><br><span class="line"><span class="comment">#把wallpaper目录下的图片按192的宽度,108的高度,生成一张宽度为1920,高度为1080的拼贴画</span></span><br></pre></td></tr></table></figure>
+ 
       <!-- reward -->
       
     </div>
@@ -171,9 +176,9 @@
       </a>
     
     
-      <a href="/2020/10/14/fzf/" class="article-nav-link">
+      <a href="/2020/10/14/powerpill/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">fzf</div>
+        <div class="article-nav-title">powerpill</div>
       </a>
     
   </nav>

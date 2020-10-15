@@ -3,7 +3,10 @@
   <entry>
     <title>aria2</title>
     <url>/2020/10/14/aria2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/aria2/aria2">aria2</a>是一个轻量级的多协议和多源命令行下载工具，它支持HTTP/HTTPS，FTP，SFTP，BitTorrent和Metalink协议</p>
+<p><a href="http://aria2.github.io/manual/en/html/index.html">在线手册</a></p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S aria2</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>记录</category>
       </categories>
@@ -45,62 +48,10 @@
   <entry>
     <title>feh</title>
     <url>/2020/10/14/feh/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ffmpeg</title>
-    <url>/2020/10/14/ffmpeg/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jepgoptim</title>
-    <url>/2020/10/14/jepgoptim/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>qbittorrent</title>
-    <url>/2020/10/14/qbittorrent/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>powertill</title>
-    <url>/2020/10/14/powertill/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ranger</title>
-    <url>/2020/10/14/ranger/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://wiki.archlinux.org/index.php/Feh">feh</a>是一款轻巧而功能强大的图像查看器，也可用于管理缺少此类功能的独立窗口管理器的桌面壁纸</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S feh</span><br></pre></td></tr></table></figure>
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">feh *                          <span class="comment">#可查看当前目录和当前子目录的所有图片</span></span><br><span class="line">feh -D 2 *.jpg                 <span class="comment">#2秒一张幻灯片播放</span></span><br><span class="line">feh -F                         <span class="comment">#全屏</span></span><br><span class="line">feh -g 1920x1080               <span class="comment">#按规定尺寸播放</span></span><br><span class="line">feh --list                     <span class="comment">#查看图片信息</span></span><br><span class="line">fen --bg-fill                  <span class="comment">#全屏图片作为背景</span></span><br><span class="line">feh -S                         <span class="comment">#排序,可按照 name, filename, width, height, pixels,size, format 七种方式排序</span></span><br><span class="line">feh --cycle-once -FD 1 *.jpg   <span class="comment">#循环一次后即结束播放</span></span><br><span class="line">feh -t -E 128 -y 128 -W 1024 -H 1024 wallpaper</span><br><span class="line"><span class="comment">#-t 是生成缩略图 -E 是缩略图的高度 -y是缩略图宽度 -W 是拼接后的照片的宽度 -H是拼接后的照片的高度 指定wallpaper文件夹</span></span><br><span class="line">feh -irF  -O index.jpg wallpaper</span><br><span class="line"><span class="comment">#-r 递归所指定目录下所有子目录，-i 是生成索引，-F全屏</span></span><br><span class="line">feh -m -X -E 108 -y 192 -H 1080 -W 1920 -o montage.jpg wallpaper</span><br><span class="line"><span class="comment">#把wallpaper目录下的图片按192的宽度,108的高度,生成一张宽度为1920,高度为1080的拼贴画</span></span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>记录</category>
       </categories>
@@ -127,10 +78,12 @@
 ]]></content>
   </entry>
   <entry>
-    <title>scrot</title>
-    <url>/2020/10/14/scrot/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>scrot是一个命名行截图软件支持延时截屏,调整品质/大小,命令行传递等功能</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scrot                         <span class="comment">#截下整个桌面</span></span><br><span class="line">scrot /home/code/1.jpg        <span class="comment">#命名并保存到指定文件夹</span></span><br><span class="line">scrot -s                      <span class="comment">#手动框选截图</span></span><br><span class="line">scrot -d NUM                  <span class="comment">#延迟NUM秒后截屏</span></span><br><span class="line">scrot -d NUM -c               <span class="comment">#显示延时的倒计时</span></span><br><span class="line">scrot -q NUM                  <span class="comment">#调整截屏质量(1~100,默认75)</span></span><br><span class="line">scrot -t NUM                  <span class="comment">#调整截屏尺寸(1~100)</span></span><br><span class="line">scrot -e <span class="string">&#x27;mv $f ~/wallpaper&#x27;</span>  <span class="comment">#将截取的截屏传递给其它命令($f)</span></span><br></pre></td></tr></table></figure>
+    <title>jepgoptim</title>
+    <url>/2020/10/14/jepgoptim/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/tjko/jpegoptim">jepgoptim</a>图片优化的开源小工具，有较好的图片压缩效果</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S jpegoptim</span><br></pre></td></tr></table></figure>
+
+<h4 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-d &lt;path&gt;, --dest=&lt;path&gt;             <span class="comment">#保存优化后的文件到指定目录(默认为覆盖源文件)</span></span><br><span class="line">-f, --force                          <span class="comment">#强制优化</span></span><br><span class="line">-m&lt;quality&gt;, --max=&lt;quality&gt;         <span class="comment">#设置压缩质量(1~100)</span></span><br><span class="line">-n, --noaction                       <span class="comment">#只打印优化结果</span></span><br><span class="line">-S&lt;size&gt;, --size=&lt;size&gt;              <span class="comment">#尝试压缩到指定大小</span></span><br><span class="line">-T&lt;treshold&gt;, --threshold=&lt;treshold&gt; <span class="comment">#阀值(%),到达后不再优化</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -140,8 +93,8 @@
       </tags>
   </entry>
   <entry>
-    <title>fzf</title>
-    <url>/2020/10/14/fzf/</url>
+    <title>ffmpeg</title>
+    <url>/2020/10/14/ffmpeg/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
       <categories>
         <category>记录</category>
@@ -151,14 +104,51 @@
       </tags>
   </entry>
   <entry>
-    <title>youtube-dl</title>
-    <url>/2020/10/14/youtube-dl/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl</a>命令行视频下载软件，不止于youtube</p>
-<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S youtube-dl</span><br></pre></td></tr></table></figure>
+    <title>qbittorrent</title>
+    <url>/2020/10/14/qbittorrent/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/qbittorrent/qBittorrent">qbittorrent</a>是由Arvid Norberg使用C++/Qt编程的bittorrent客户端</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S qbittorrent</span><br></pre></td></tr></table></figure>
 
-<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl [url]                           <span class="comment">#自动选择一个最清晰的格式下载</span></span><br><span class="line">youtube-dl -F [url]                        <span class="comment">#查看视频格式选项</span></span><br><span class="line">youtube-dl -f [number] [url]               <span class="comment">#选择指定格式下载</span></span><br><span class="line">youtube-dl -f [number]+[number] [url]      <span class="comment">#组合下载</span></span><br><span class="line">youtube [palylist_url]                     <span class="comment">#下载视频列表所有视频</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ranger</title>
+    <url>/2020/10/14/ranger/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>powerpill</title>
+    <url>/2020/10/14/powerpill/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://wiki.archlinux.org/index.php/powerpill">powerpill</a>Powerpill是一个pacman包装器，使用并行和分段下载来尝试加快Pacman的下载速度</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S powerpill</span><br></pre></td></tr></table></figure>
 
-<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-U, --update            <span class="comment">#更新</span></span><br><span class="line">--proxy URL             <span class="comment">#例如socks5://127.0.0.1:1080/</span></span><br><span class="line">-r, --limit-rate RATE   <span class="comment">#设置最大下载速度(e.g. 50K or 4.2M)</span></span><br><span class="line">-f, --format FORMAT     <span class="comment">#下载指定序号的文件</span></span><br><span class="line">-F, --list-formats      <span class="comment">#列出所有视频格式</span></span><br><span class="line">--list-subs             <span class="comment">#列出所有可用字幕</span></span><br><span class="line">-u, --username USERNAME <span class="comment">#ID</span></span><br><span class="line">-p, --password PASSWORD <span class="comment">#密码</span></span><br><span class="line">--skip-download         <span class="comment">#跳过下载</span></span><br><span class="line">—-write-sub             <span class="comment">#写入字幕,即把字幕下载(默认为.vvt)</span></span><br><span class="line">--sub-format            <span class="comment">#指定字幕格式,按顺序选,不存在则选下一个</span></span><br><span class="line">--convert-subs          <span class="comment">#转换字幕,通用为.srt或.ass</span></span><br></pre></td></tr></table></figure>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p><font color=#9c9>/etc/powerpill/powerpill.json</font> #配置文件,您可以根据自己的喜好进行编辑</p>
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#操作同pacman相同</span></span><br><span class="line">sudo powerpill -S      <span class="comment">#下载</span></span><br><span class="line">sudo powerpill -Syu    <span class="comment">#更新系统</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>scrot</title>
+    <url>/2020/10/14/scrot/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>scrot是一个命名行截图软件支持延时截屏,调整品质/大小,命令行传递等功能</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scrot                         <span class="comment">#截下整个桌面</span></span><br><span class="line">scrot /home/code/1.jpg        <span class="comment">#命名并保存到指定文件夹</span></span><br><span class="line">scrot -s                      <span class="comment">#手动框选截图</span></span><br><span class="line">scrot -d NUM                  <span class="comment">#延迟NUM秒后截屏</span></span><br><span class="line">scrot -d NUM -c               <span class="comment">#显示延时的倒计时</span></span><br><span class="line">scrot -q NUM                  <span class="comment">#调整截屏质量(1~100,默认75)</span></span><br><span class="line">scrot -t NUM                  <span class="comment">#调整截屏尺寸(1~100)</span></span><br><span class="line">scrot -e <span class="string">&#x27;mv $f ~/wallpaper&#x27;</span>  <span class="comment">#将截取的截屏传递给其它命令($f)</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -189,18 +179,6 @@
       </tags>
   </entry>
   <entry>
-    <title>网页收藏</title>
-    <url>/2020/10/14/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="Makedown语法说明"><a href="#Makedown语法说明" class="headerlink" title="Makedown语法说明"></a>Makedown语法说明</h3><p><a href="http://www.wowubuntu.com/markdown/index/">http://www.wowubuntu.com/markdown/index/</a></p>
-]]></content>
-      <categories>
-        <category>收藏</category>
-      </categories>
-      <tags>
-        <tag>网页</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>st</title>
     <url>/2020/10/14/st/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://st.suckless.org/">st</a>是一个极轻量的虚拟终端</p>
@@ -214,6 +192,35 @@
       </categories>
       <tags>
         <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>youtube-dl</title>
+    <url>/2020/10/14/youtube-dl/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl</a>命令行视频下载软件，不止于youtube</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S youtube-dl</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl [url]                           <span class="comment">#自动选择一个最清晰的格式下载</span></span><br><span class="line">youtube-dl -F [url]                        <span class="comment">#查看视频格式选项</span></span><br><span class="line">youtube-dl -f [number] [url]               <span class="comment">#选择指定格式下载</span></span><br><span class="line">youtube-dl -f [number]+[number] [url]      <span class="comment">#组合下载</span></span><br><span class="line">youtube [palylist_url]                     <span class="comment">#下载视频列表所有视频</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-U, --update            <span class="comment">#更新</span></span><br><span class="line">--proxy URL             <span class="comment">#例如socks5://127.0.0.1:1080/</span></span><br><span class="line">-r, --limit-rate RATE   <span class="comment">#设置最大下载速度(e.g. 50K or 4.2M)</span></span><br><span class="line">-f, --format FORMAT     <span class="comment">#下载指定序号的文件</span></span><br><span class="line">-F, --list-formats      <span class="comment">#列出所有视频格式</span></span><br><span class="line">--list-subs             <span class="comment">#列出所有可用字幕</span></span><br><span class="line">-u, --username USERNAME <span class="comment">#ID</span></span><br><span class="line">-p, --password PASSWORD <span class="comment">#密码</span></span><br><span class="line">--skip-download         <span class="comment">#跳过下载</span></span><br><span class="line">—-write-sub             <span class="comment">#写入字幕,即把字幕下载(默认为.vvt)</span></span><br><span class="line">--sub-format            <span class="comment">#指定字幕格式,按顺序选,不存在则选下一个</span></span><br><span class="line">--convert-subs          <span class="comment">#转换字幕,通用为.srt或.ass</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网页收藏</title>
+    <url>/2020/10/14/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="Makedown语法说明"><a href="#Makedown语法说明" class="headerlink" title="Makedown语法说明"></a>Makedown语法说明</h3><p><a href="http://www.wowubuntu.com/markdown/index/">http://www.wowubuntu.com/markdown/index/</a></p>
+]]></content>
+      <categories>
+        <category>收藏</category>
+      </categories>
+      <tags>
+        <tag>网页</tag>
       </tags>
   </entry>
 </search>
