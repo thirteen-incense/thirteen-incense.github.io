@@ -48,7 +48,17 @@
   <entry>
     <title>ffmpeg</title>
     <url>/2020/10/14/ffmpeg/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/FFmpeg/FFmpeg">ffmpeg</a>FFmpeg是用于处理多媒体内容（例如音频，视频，字幕和相关元数据）的库和工具的集合</p>
+<h4 id="通用选项"><a href="#通用选项" class="headerlink" title="通用选项"></a>通用选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-L license</span><br><span class="line">-h                     <span class="comment">#帮助</span></span><br><span class="line">-fromats               <span class="comment">#显示可用的格式，编解码的，协议的...</span></span><br><span class="line">-f fmt                 <span class="comment">#强迫采用格式fmt</span></span><br><span class="line">-I filename            <span class="comment">#输入文件</span></span><br><span class="line">-y                     <span class="comment">#覆盖输出文件</span></span><br><span class="line">-t duration            <span class="comment">#设置纪录时间 hh:mm:ss[.xxx]格式的记录时间也支持</span></span><br><span class="line">-ss position           <span class="comment">#搜索到指定的时间 [-]hh:mm:ss[.xxx]的格式也支持</span></span><br><span class="line">-title string          <span class="comment">#设置标题</span></span><br><span class="line">-author string         <span class="comment">#设置作者</span></span><br><span class="line">-copyright string      <span class="comment">#设置版权</span></span><br><span class="line">-comment string        <span class="comment">#设置评论</span></span><br><span class="line">-target <span class="built_in">type</span>           <span class="comment">#设置目标文件类型(vcd,svcd,dvd) 所有的格式选项（比特率，编解码以及缓冲区大小）自动设置，只需要输入如下的就可以了：ffmpeg -i myfile.avi -target vcd /tmp/vcd.mpg</span></span><br><span class="line">-hq                    <span class="comment">#激活高质量设置</span></span><br><span class="line">-itsoffset offset      <span class="comment">#设置以秒为基准的时间偏移，该选项影响所有后面的输入文件。该偏移被加到输入文件的时戳，定义一个正偏移意味着相应的流被延迟了 offset秒。 [-]hh:mm:ss[.xxx]的格式也支持</span></span><br></pre></td></tr></table></figure>
+<h4 id="视频选项"><a href="#视频选项" class="headerlink" title="视频选项"></a>视频选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-b bitrate            <span class="comment">#设置比特率，缺省200kb/s</span></span><br><span class="line">-r fps                <span class="comment">#设置帧频 缺省25</span></span><br><span class="line">-s size               <span class="comment">#设置帧大小 格式为WXH 缺省160X128.下面的简写也可以直接使用：Sqcif 128X96 qcif 176X144 cif 252X288 4cif 704X576</span></span><br><span class="line">-aspect aspect        <span class="comment">#设置横纵比 4:3 16:9 或 1.3333 1.7777</span></span><br><span class="line">-croptop size         <span class="comment">#设置顶部切除带大小 像素单位</span></span><br><span class="line">-cropbottom size –cropleft size –cropright size</span><br><span class="line">-padtop size          <span class="comment">#设置顶部补齐的大小 像素单位</span></span><br><span class="line">-padbottom size –padleft size –padright size –padcolor color </span><br><span class="line"><span class="comment">#设置补齐条颜色(hex,6个16进制的数，红:绿:蓝排列，比如 000000代表黑色)</span></span><br><span class="line">-vn                   <span class="comment">#不做视频记录</span></span><br><span class="line">-bt tolerance         <span class="comment">#设置视频码率容忍度kbit/s</span></span><br><span class="line">-maxrate bitrate      <span class="comment">#设置最大视频码率容忍度</span></span><br><span class="line">-minrate bitreate     <span class="comment">#设置最小视频码率容忍度</span></span><br><span class="line">-bufsize size         <span class="comment">#设置码率控制缓冲区大小</span></span><br><span class="line">-vcodec codec         <span class="comment">#强制使用codec编解码方式。如果用copy表示原始编解码数据必须被拷贝。</span></span><br><span class="line">-sameq                <span class="comment">#使用同样视频质量作为源（VBR）</span></span><br><span class="line">-pass n               <span class="comment">#选择处理遍数（1或者2）。两遍编码非常有用。第一遍生成统计信息，第二遍生成精确的请求的码率</span></span><br><span class="line">-passlogfile file     <span class="comment">#选择两遍的纪录文件名为file</span></span><br></pre></td></tr></table></figure>
+<h4 id="高级视频选项"><a href="#高级视频选项" class="headerlink" title="高级视频选项"></a>高级视频选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-g gop_size           <span class="comment">#设置图像组大小</span></span><br><span class="line">-intra                <span class="comment">#仅适用帧内编码</span></span><br><span class="line">-qscale q             <span class="comment">#使用固定的视频量化标度(VBR)</span></span><br><span class="line">-qmin q               <span class="comment">#最小视频量化标度(VBR)</span></span><br><span class="line">-qmax q               <span class="comment">#最大视频量化标度(VBR)</span></span><br><span class="line">-qdiff q              <span class="comment">#量化标度间最大偏差 (VBR)</span></span><br><span class="line">-qblur blur           <span class="comment">#视频量化标度柔化(VBR)</span></span><br><span class="line">-qcomp compression    <span class="comment">#视频量化标度压缩(VBR)</span></span><br><span class="line">-rc_init_cplx complexity </span><br><span class="line"><span class="comment">#一遍编码的初始复杂度</span></span><br><span class="line">-b_qfactor factor     <span class="comment">#在p和b帧间的qp因子</span></span><br><span class="line">-i_qfactor factor     <span class="comment">#在p和i帧间的qp因子</span></span><br><span class="line">-b_qoffset offset     <span class="comment">#在p和b帧间的qp偏差</span></span><br><span class="line">-i_qoffset offset     <span class="comment">#在p和i帧间的qp偏差</span></span><br><span class="line">-rc_eq equation       <span class="comment">#设置码率控制方程 默认tex^qComp</span></span><br><span class="line">-rc_override override <span class="comment">#特定间隔下的速率控制重载</span></span><br><span class="line">-me method            <span class="comment">#设置运动估计的方法 可用方法有 zero phods log x1 epzs(缺省) full</span></span><br><span class="line">-dct_algo algo        <span class="comment">#设置dct的算法 可用的有 0 FF_DCT_AUTO 缺省的DCT 1 FF_DCT_FASTINT 2 FF_DCT_INT 3 FF_DCT_MMX 4 FF_DCT_MLIB 5 FF_DCT_ALTIVEC</span></span><br><span class="line">-idct_algo algo       <span class="comment">#设置idct算法。可用的有 0 FF_IDCT_AUTO 缺省的IDCT 1 FF_IDCT_INT 2 FF_IDCT_SIMPLE 3 FF_IDCT_SIMPLEMMX 4 FF_IDCT_LIBMPEG2MMX 5 FF_IDCT_PS2 6 FF_IDCT_MLIB 7 FF_IDCT_ARM 8 FF_IDCT_ALTIVEC 9 FF_IDCT_SH4 10 FF_IDCT_SIMPLEARM</span></span><br><span class="line">-er n                 <span class="comment">#设置错误残留为n 1 FF_ER_CAREFULL 缺省 2 FF_ER_COMPLIANT 3 FF_ER_AGGRESSIVE 4 FF_ER_VERY_AGGRESSIVE</span></span><br><span class="line">-ec bit_mask          <span class="comment">#设置错误掩蔽为bit_mask,该值为如下值的位掩码 1 FF_EC_GUESS_MVS (default=enabled) 2 FF_EC_DEBLOCK (default=enabled)</span></span><br><span class="line">-bf frames            <span class="comment">#使用frames B 帧，支持mpeg1,mpeg2,mpeg4</span></span><br><span class="line">-mbd mode             <span class="comment">#宏块决策 0 FF_MB_DECISION_SIMPLE 使用mb_cmp 1 FF_MB_DECISION_BITS 2 FF_MB_DECISION_RD</span></span><br><span class="line">-4mv                  <span class="comment">#使用4个运动矢量 仅用于mpeg4</span></span><br><span class="line">-part                 <span class="comment">#使用数据划分 仅用于mpeg4</span></span><br><span class="line">-bug param            <span class="comment">#绕过没有被自动监测到编码器的问题</span></span><br><span class="line">-strict strictness    <span class="comment">#更标准的严格性</span></span><br><span class="line">-aic                  <span class="comment">#使能高级帧内编码 h263+</span></span><br><span class="line">-umv                  <span class="comment">#使能无限运动矢量 h263+</span></span><br><span class="line">-deinterlace          <span class="comment">#不采用交织方法</span></span><br><span class="line">-interlace            <span class="comment">#强迫交织法编码仅对mpeg2和mpeg4有效。当你的输入是交织的并且你想要保持交织以最小图像损失的时候采用该选项。可选的方法是不交织，但是损失更大</span></span><br><span class="line">-psnr                 <span class="comment">#计算压缩帧的psnr</span></span><br><span class="line">-vstats               <span class="comment">#输出视频编码统计到vstats_hhmmss.log</span></span><br><span class="line">-vhook module         <span class="comment">#插入视频处理模块 module 包括了模块名和参数，用空格分开</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="音频选项"><a href="#音频选项" class="headerlink" title="音频选项"></a>音频选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-ab bitrate           <span class="comment">#设置音频码率</span></span><br><span class="line">-ar freq              <span class="comment">#设置音频采样率</span></span><br><span class="line">-ac channels          <span class="comment">#设置通道 缺省为1</span></span><br><span class="line">-an                   <span class="comment">#不使能音频纪录</span></span><br><span class="line">-acodec codec         <span class="comment">#使用codec编解码</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="音频-视频捕获选项"><a href="#音频-视频捕获选项" class="headerlink" title="音频/视频捕获选项"></a>音频/视频捕获选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-vd device            <span class="comment">#设置视频捕获设备。比如/dev/video0</span></span><br><span class="line">-vc channel           <span class="comment">#设置视频捕获通道 DV1394专用</span></span><br><span class="line">-tvstd standard       <span class="comment">#设置电视标准 NTSC PAL(SECAM)</span></span><br><span class="line">-dv1394               <span class="comment">#设置DV1394捕获</span></span><br><span class="line">-av device            <span class="comment">#设置音频设备 比如/dev/dsp</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="高级选项"><a href="#高级选项" class="headerlink" title="高级选项"></a>高级选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-map file:stream      <span class="comment">#设置输入流映射</span></span><br><span class="line">-debug                <span class="comment">#打印特定调试信息</span></span><br><span class="line">-benchmark            <span class="comment">#为基准测试加入时间</span></span><br><span class="line">-hex                  <span class="comment">#倾倒每一个输入包</span></span><br><span class="line">-bitexact             <span class="comment">#仅使用位精确算法 用于编解码测试</span></span><br><span class="line">-ps size              <span class="comment">#设置包大小，以bits为单位</span></span><br><span class="line">-re                   <span class="comment">#以本地帧频读数据，主要用于模拟捕获设备</span></span><br><span class="line">-loop                 <span class="comment">#循环输入流（只工作于图像流，用于ffserver测试）</span></span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>记录</category>
       </categories>
@@ -62,6 +72,21 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://wiki.archlinux.org/index.php/Feh">feh</a>是一款轻巧而功能强大的图像查看器，也可用于管理缺少此类功能的独立窗口管理器的桌面壁纸</p>
 <h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S feh</span><br></pre></td></tr></table></figure>
 <h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">feh *                          <span class="comment">#可查看当前目录和当前子目录的所有图片</span></span><br><span class="line">feh -D 2 *.jpg                 <span class="comment">#2秒一张幻灯片播放</span></span><br><span class="line">feh -F                         <span class="comment">#全屏</span></span><br><span class="line">feh -g 1920x1080               <span class="comment">#按规定尺寸播放</span></span><br><span class="line">feh --list                     <span class="comment">#查看图片信息</span></span><br><span class="line">fen --bg-fill                  <span class="comment">#全屏图片作为背景</span></span><br><span class="line">feh -S                         <span class="comment">#排序,可按照 name, filename, width, height, pixels,size, format 七种方式排序</span></span><br><span class="line">feh --cycle-once -FD 1 *.jpg   <span class="comment">#循环一次后即结束播放</span></span><br><span class="line">feh -t -E 128 -y 128 -W 1024 -H 1024 wallpaper</span><br><span class="line"><span class="comment">#-t 是生成缩略图 -E 是缩略图的高度 -y是缩略图宽度 -W 是拼接后的照片的宽度 -H是拼接后的照片的高度 指定wallpaper文件夹</span></span><br><span class="line">feh -irF  -O index.jpg wallpaper</span><br><span class="line"><span class="comment">#-r 递归所指定目录下所有子目录，-i 是生成索引，-F全屏</span></span><br><span class="line">feh -m -X -E 108 -y 192 -H 1080 -W 1920 -o montage.jpg wallpaper</span><br><span class="line"><span class="comment">#把wallpaper目录下的图片按192的宽度,108的高度,生成一张宽度为1920,高度为1080的拼贴画</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jepgoptim</title>
+    <url>/2020/10/14/jepgoptim/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/tjko/jpegoptim">jepgoptim</a>图片优化的开源小工具，有较好的图片压缩效果</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S jpegoptim</span><br></pre></td></tr></table></figure>
+
+<h4 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-d &lt;path&gt;, --dest=&lt;path&gt;             <span class="comment">#保存优化后的文件到指定目录(默认为覆盖源文件)</span></span><br><span class="line">-f, --force                          <span class="comment">#强制优化</span></span><br><span class="line">-m&lt;quality&gt;, --max=&lt;quality&gt;         <span class="comment">#设置压缩质量(1~100)</span></span><br><span class="line">-n, --noaction                       <span class="comment">#只打印优化结果</span></span><br><span class="line">-S&lt;size&gt;, --size=&lt;size&gt;              <span class="comment">#尝试压缩到指定大小</span></span><br><span class="line">-T&lt;treshold&gt;, --threshold=&lt;treshold&gt; <span class="comment">#阀值(%),到达后不再优化</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -89,12 +114,24 @@
 ]]></content>
   </entry>
   <entry>
-    <title>jepgoptim</title>
-    <url>/2020/10/14/jepgoptim/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/tjko/jpegoptim">jepgoptim</a>图片优化的开源小工具，有较好的图片压缩效果</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S jpegoptim</span><br></pre></td></tr></table></figure>
+    <title>mplayer</title>
+    <url>/2020/10/16/mplayer/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/sherpya/MPlayer/">mplayer</a>命令行播放器</p>
+<p><a href="http://www.mplayerhq.hu/DOCS/HTML/en/MPlayer.html">在线手册</a></p>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>qbittorrent</title>
+    <url>/2020/10/14/qbittorrent/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/qbittorrent/qBittorrent">qbittorrent</a>是由Arvid Norberg使用C++/Qt编程的bittorrent客户端</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S qbittorrent</span><br></pre></td></tr></table></figure>
 
-<h4 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-d &lt;path&gt;, --dest=&lt;path&gt;             <span class="comment">#保存优化后的文件到指定目录(默认为覆盖源文件)</span></span><br><span class="line">-f, --force                          <span class="comment">#强制优化</span></span><br><span class="line">-m&lt;quality&gt;, --max=&lt;quality&gt;         <span class="comment">#设置压缩质量(1~100)</span></span><br><span class="line">-n, --noaction                       <span class="comment">#只打印优化结果</span></span><br><span class="line">-S&lt;size&gt;, --size=&lt;size&gt;              <span class="comment">#尝试压缩到指定大小</span></span><br><span class="line">-T&lt;treshold&gt;, --threshold=&lt;treshold&gt; <span class="comment">#阀值(%),到达后不再优化</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -111,6 +148,23 @@
 
 <h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p><font color=#9c9>/etc/powerpill/powerpill.json</font> #配置文件,您可以根据自己的喜好进行编辑</p>
 <h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#操作同pacman相同</span></span><br><span class="line">sudo powerpill -S      <span class="comment">#下载</span></span><br><span class="line">sudo powerpill -Syu    <span class="comment">#更新系统</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ranger</title>
+    <url>/2020/10/14/ranger/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/ranger/ranger/">ranger</a>是一个基于ncurses库的命令行文件管理器，有一个简单而简约的用户界面。它使用基本的vi式的导航键，能够预览文件和用默认程序打开它们。</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S ranger</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ranger --copy-config=all       <span class="comment">#生成配置文件</span></span><br><span class="line">./config/ranger</span><br><span class="line">commandr.py                    <span class="comment">#脚本文件可以自行添加修改</span></span><br><span class="line">commandr_full.py</span><br><span class="line">rc.conf                        <span class="comment">#快捷键，功能设置文件</span></span><br><span class="line">rifle.conf                     <span class="comment">#默认执行程序设置文件</span></span><br><span class="line">scope.sh                       <span class="comment">#预览脚本</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h4><p><font color=#9c9>将插件添加到目录~/.config/ranger/plugins/</font><br>MP3转换插件<a href="https://github.com/madskjeldgaard/ranger-lame">https://github.com/madskjeldgaard/ranger-lame</a><br>SoX集成插件，用于管理，处理和转换音频文件<a href="https://github.com/madskjeldgaard/ranger-sox">https://github.com/madskjeldgaard/ranger-sox</a><br>git附件插件<a href="https://github.com/matze/ranger-annex">https://github.com/matze/ranger-annex</a><br>Ranger Devicons插件<a href="https://github.com/alexanderjeurissen/ranger_devicons">https://github.com/alexanderjeurissen/ranger_devicons</a><br>ranger自动跳转插件<a href="https://github.com/fdw/ranger-autojump">https://github.com/fdw/ranger-autojump</a><br>feedranger<a href="https://github.com/stefandtw/feedranger">https://github.com/stefandtw/feedranger</a><br>fzf-marks(带有fzf的模糊书签)<a href="https://github.com/laggardkernel/ranger-fzf-marks">https://github.com/laggardkernel/ranger-fzf-marks</a><br>ranger-cmus(与cmus音频播放器集成)<a href="https://github.com/maximtrp/ranger-cmus">https://github.com/maximtrp/ranger-cmus</a></p>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -141,11 +195,13 @@
       </tags>
   </entry>
   <entry>
-    <title>qbittorrent</title>
-    <url>/2020/10/14/qbittorrent/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/qbittorrent/qBittorrent">qbittorrent</a>是由Arvid Norberg使用C++/Qt编程的bittorrent客户端</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S qbittorrent</span><br></pre></td></tr></table></figure>
+    <title>st</title>
+    <url>/2020/10/14/st/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://st.suckless.org/">st</a>是一个极轻量的虚拟终端</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git.suckless.org/st</span><br><span class="line"><span class="built_in">cd</span> st</span><br><span class="line">sudo make clean install</span><br></pre></td></tr></table></figure>
 
+<h4 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h4><p>pacth &lt; xxx.diff</p>
+<p><a href="https://st.suckless.org/patches/alpha/">alpha</a>实现透明效果<br><a href="https://st.suckless.org/patches/vim_browse/">vimBrowse</a>vim浏览补丁提供了在终端历史记录缓冲区中移动，使用类似于VIM的动作<br><a href="https://st.suckless.org/patches/anysize/">anysize</a>可以使用任意大小字体<br><a href="https://st.suckless.org/patches/hidecursor/">hidecursor</a>当有键盘操作时隐藏鼠标<br><a href="https://st.suckless.org/patches/scrollback/">scrollback</a>可以用键盘回滚终端<br><a href="https://st.suckless.org/patches/scrollback/">scrollback-mouse</a>可以用鼠标回滚终端<br><a href="https://st.suckless.org/patches/dracula/">dracula</a>配色方案,应用后仅更改终端颜色</p>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -159,33 +215,6 @@
     <url>/2020/10/14/scrot/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>scrot是一个命名行截图软件支持延时截屏,调整品质/大小,命令行传递等功能</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scrot                         <span class="comment">#截下整个桌面</span></span><br><span class="line">scrot /home/code/1.jpg        <span class="comment">#命名并保存到指定文件夹</span></span><br><span class="line">scrot -s                      <span class="comment">#手动框选截图</span></span><br><span class="line">scrot -d NUM                  <span class="comment">#延迟NUM秒后截屏</span></span><br><span class="line">scrot -d NUM -c               <span class="comment">#显示延时的倒计时</span></span><br><span class="line">scrot -q NUM                  <span class="comment">#调整截屏质量(1~100,默认75)</span></span><br><span class="line">scrot -t NUM                  <span class="comment">#调整截屏尺寸(1~100)</span></span><br><span class="line">scrot -e <span class="string">&#x27;mv $f ~/wallpaper&#x27;</span>  <span class="comment">#将截取的截屏传递给其它命令($f)</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ranger</title>
-    <url>/2020/10/14/ranger/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>st</title>
-    <url>/2020/10/14/st/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://st.suckless.org/">st</a>是一个极轻量的虚拟终端</p>
-<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git.suckless.org/st</span><br><span class="line"><span class="built_in">cd</span> st</span><br><span class="line">sudo make clean install</span><br></pre></td></tr></table></figure>
-
-<h4 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h4><p>pacth &lt; xxx.diff</p>
-<p><a href="https://st.suckless.org/patches/alpha/">alpha</a>实现透明效果<br><a href="https://st.suckless.org/patches/vim_browse/">vimBrowse</a>vim浏览补丁提供了在终端历史记录缓冲区中移动，使用类似于VIM的动作<br><a href="https://st.suckless.org/patches/anysize/">anysize</a>可以使用任意大小字体<br><a href="https://st.suckless.org/patches/hidecursor/">hidecursor</a>当有键盘操作时隐藏鼠标<br><a href="https://st.suckless.org/patches/scrollback/">scrollback</a>可以用键盘回滚终端<br><a href="https://st.suckless.org/patches/scrollback/">scrollback-mouse</a>可以用鼠标回滚终端<br><a href="https://st.suckless.org/patches/dracula/">dracula</a>配色方案,应用后仅更改终端颜色</p>
 ]]></content>
       <categories>
         <category>记录</category>
