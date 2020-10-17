@@ -21,6 +21,20 @@
       </tags>
   </entry>
   <entry>
+    <title>aria2</title>
+    <url>/2020/10/14/aria2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/aria2/aria2">aria2</a>是一个轻量级的多协议和多源命令行下载工具，它支持HTTP/HTTPS，FTP，SFTP，BitTorrent和Metalink协议</p>
+<p><a href="http://aria2.github.io/manual/en/html/index.html">在线手册</a></p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S aria2</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>dwm</title>
     <url>/2020/10/14/dwm/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://dwm.suckless.org/">dwm</a>是一个简洁的平铺式窗口管理器<br>配置简单，使用便捷，没有多少依赖，占用内存非常小</p>
@@ -57,20 +71,6 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://wiki.archlinux.org/index.php/Feh">feh</a>是一款轻巧而功能强大的图像查看器，也可用于管理缺少此类功能的独立窗口管理器的桌面壁纸</p>
 <h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S feh</span><br></pre></td></tr></table></figure>
 <h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">feh *                          <span class="comment">#可查看当前目录和当前子目录的所有图片</span></span><br><span class="line">feh -D 2 *.jpg                 <span class="comment">#2秒一张幻灯片播放</span></span><br><span class="line">feh -F                         <span class="comment">#全屏</span></span><br><span class="line">feh -g 1920x1080               <span class="comment">#按规定尺寸播放</span></span><br><span class="line">feh --list                     <span class="comment">#查看图片信息</span></span><br><span class="line">fen --bg-fill                  <span class="comment">#全屏图片作为背景</span></span><br><span class="line">feh -S                         <span class="comment">#排序,可按照 name, filename, width, height, pixels,size, format 七种方式排序</span></span><br><span class="line">feh --cycle-once -FD 1 *.jpg   <span class="comment">#循环一次后即结束播放</span></span><br><span class="line">feh -t -E 128 -y 128 -W 1024 -H 1024 wallpaper</span><br><span class="line"><span class="comment">#-t 是生成缩略图 -E 是缩略图的高度 -y是缩略图宽度 -W 是拼接后的照片的宽度 -H是拼接后的照片的高度 指定wallpaper文件夹</span></span><br><span class="line">feh -irF  -O index.jpg wallpaper</span><br><span class="line"><span class="comment">#-r 递归所指定目录下所有子目录，-i 是生成索引，-F全屏</span></span><br><span class="line">feh -m -X -E 108 -y 192 -H 1080 -W 1920 -o montage.jpg wallpaper</span><br><span class="line"><span class="comment">#把wallpaper目录下的图片按192的宽度,108的高度,生成一张宽度为1920,高度为1080的拼贴画</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>aria2</title>
-    <url>/2020/10/14/aria2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/aria2/aria2">aria2</a>是一个轻量级的多协议和多源命令行下载工具，它支持HTTP/HTTPS，FTP，SFTP，BitTorrent和Metalink协议</p>
-<p><a href="http://aria2.github.io/manual/en/html/index.html">在线手册</a></p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S aria2</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -151,13 +151,11 @@
       </tags>
   </entry>
   <entry>
-    <title>powerpill</title>
-    <url>/2020/10/14/powerpill/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://wiki.archlinux.org/index.php/powerpill">powerpill</a>Powerpill是一个pacman包装器，使用并行和分段下载来尝试加快Pacman的下载速度</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S powerpill</span><br></pre></td></tr></table></figure>
+    <title>qbittorrent</title>
+    <url>/2020/10/14/qbittorrent/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/qbittorrent/qBittorrent">qbittorrent</a>是由Arvid Norberg使用C++/Qt编程的bittorrent客户端</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S qbittorrent</span><br></pre></td></tr></table></figure>
 
-<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p><font color=#9c9>/etc/powerpill/powerpill.json</font> #配置文件,您可以根据自己的喜好进行编辑</p>
-<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#操作同pacman相同</span></span><br><span class="line">sudo powerpill -S      <span class="comment">#下载</span></span><br><span class="line">sudo powerpill -Syu    <span class="comment">#更新系统</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -167,11 +165,13 @@
       </tags>
   </entry>
   <entry>
-    <title>qbittorrent</title>
-    <url>/2020/10/14/qbittorrent/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/qbittorrent/qBittorrent">qbittorrent</a>是由Arvid Norberg使用C++/Qt编程的bittorrent客户端</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S qbittorrent</span><br></pre></td></tr></table></figure>
+    <title>powerpill</title>
+    <url>/2020/10/14/powerpill/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://wiki.archlinux.org/index.php/powerpill">powerpill</a>Powerpill是一个pacman包装器，使用并行和分段下载来尝试加快Pacman的下载速度</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S powerpill</span><br></pre></td></tr></table></figure>
 
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p><font color=#9c9>/etc/powerpill/powerpill.json</font> #配置文件,您可以根据自己的喜好进行编辑</p>
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#操作同pacman相同</span></span><br><span class="line">sudo powerpill -S      <span class="comment">#下载</span></span><br><span class="line">sudo powerpill -Syu    <span class="comment">#更新系统</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -219,10 +219,13 @@
       </tags>
   </entry>
   <entry>
-    <title>scrot</title>
-    <url>/2020/10/14/scrot/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>scrot是一个命名行截图软件支持延时截屏,调整品质/大小,命令行传递等功能</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scrot                         <span class="comment">#截下整个桌面</span></span><br><span class="line">scrot /home/code/1.jpg        <span class="comment">#命名并保存到指定文件夹</span></span><br><span class="line">scrot -s                      <span class="comment">#手动框选截图</span></span><br><span class="line">scrot -d NUM                  <span class="comment">#延迟NUM秒后截屏</span></span><br><span class="line">scrot -d NUM -c               <span class="comment">#显示延时的倒计时</span></span><br><span class="line">scrot -q NUM                  <span class="comment">#调整截屏质量(1~100,默认75)</span></span><br><span class="line">scrot -t NUM                  <span class="comment">#调整截屏尺寸(1~100)</span></span><br><span class="line">scrot -e <span class="string">&#x27;mv $f ~/wallpaper&#x27;</span>  <span class="comment">#将截取的截屏传递给其它命令($f)</span></span><br></pre></td></tr></table></figure>
+    <title>st</title>
+    <url>/2020/10/14/st/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://st.suckless.org/">st</a>是一个极轻量的虚拟终端</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git.suckless.org/st</span><br><span class="line"><span class="built_in">cd</span> st</span><br><span class="line">sudo make clean install</span><br></pre></td></tr></table></figure>
+
+<h4 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h4><p>pacth &lt; xxx.diff</p>
+<p><a href="https://st.suckless.org/patches/alpha/">alpha</a>实现透明效果<br><a href="https://st.suckless.org/patches/vim_browse/">vimBrowse</a>vim浏览补丁提供了在终端历史记录缓冲区中移动，使用类似于VIM的动作<br><a href="https://st.suckless.org/patches/anysize/">anysize</a>可以使用任意大小字体<br><a href="https://st.suckless.org/patches/hidecursor/">hidecursor</a>当有键盘操作时隐藏鼠标<br><a href="https://st.suckless.org/patches/scrollback/">scrollback</a>可以用键盘回滚终端<br><a href="https://st.suckless.org/patches/scrollback/">scrollback-mouse</a>可以用鼠标回滚终端<br><a href="https://st.suckless.org/patches/dracula/">dracula</a>配色方案,应用后仅更改终端颜色</p>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -232,13 +235,10 @@
       </tags>
   </entry>
   <entry>
-    <title>st</title>
-    <url>/2020/10/14/st/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://st.suckless.org/">st</a>是一个极轻量的虚拟终端</p>
-<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git.suckless.org/st</span><br><span class="line"><span class="built_in">cd</span> st</span><br><span class="line">sudo make clean install</span><br></pre></td></tr></table></figure>
-
-<h4 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h4><p>pacth &lt; xxx.diff</p>
-<p><a href="https://st.suckless.org/patches/alpha/">alpha</a>实现透明效果<br><a href="https://st.suckless.org/patches/vim_browse/">vimBrowse</a>vim浏览补丁提供了在终端历史记录缓冲区中移动，使用类似于VIM的动作<br><a href="https://st.suckless.org/patches/anysize/">anysize</a>可以使用任意大小字体<br><a href="https://st.suckless.org/patches/hidecursor/">hidecursor</a>当有键盘操作时隐藏鼠标<br><a href="https://st.suckless.org/patches/scrollback/">scrollback</a>可以用键盘回滚终端<br><a href="https://st.suckless.org/patches/scrollback/">scrollback-mouse</a>可以用鼠标回滚终端<br><a href="https://st.suckless.org/patches/dracula/">dracula</a>配色方案,应用后仅更改终端颜色</p>
+    <title>scrot</title>
+    <url>/2020/10/14/scrot/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>scrot是一个命名行截图软件支持延时截屏,调整品质/大小,命令行传递等功能</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scrot                         <span class="comment">#截下整个桌面</span></span><br><span class="line">scrot /home/code/1.jpg        <span class="comment">#命名并保存到指定文件夹</span></span><br><span class="line">scrot -s                      <span class="comment">#手动框选截图</span></span><br><span class="line">scrot -d NUM                  <span class="comment">#延迟NUM秒后截屏</span></span><br><span class="line">scrot -d NUM -c               <span class="comment">#显示延时的倒计时</span></span><br><span class="line">scrot -q NUM                  <span class="comment">#调整截屏质量(1~100,默认75)</span></span><br><span class="line">scrot -t NUM                  <span class="comment">#调整截屏尺寸(1~100)</span></span><br><span class="line">scrot -e <span class="string">&#x27;mv $f ~/wallpaper&#x27;</span>  <span class="comment">#将截取的截屏传递给其它命令($f)</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
