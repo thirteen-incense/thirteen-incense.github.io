@@ -34,14 +34,14 @@
   opacity: 1;
 }
 ::selection {
-  background: #f0ffff;
+  background: #ccc;
 color
 }
 ::-moz-selection {
-  background: #f0ffff;
+  background: #ccc;
 color
 }
 ::-webkit-selection {
-  background: #f0ffff;
+  background: #ccc;
 color
 }
