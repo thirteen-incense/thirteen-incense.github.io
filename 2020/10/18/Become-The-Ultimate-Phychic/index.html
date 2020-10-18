@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Primes in numbers |  
+    Become The Ultimate Phychic |  
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -44,7 +44,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-Primes-in-numbers"
+  id="post-Become-The-Ultimate-Phychic"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -55,15 +55,15 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Primes in numbers
+  Become The Ultimate Phychic
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2020/10/17/Primes-in-numbers/" class="article-date">
-  <time datetime="2020-10-17T08:24:02.000Z" itemprop="datePublished">2020-10-17</time>
+      <a href="/2020/10/18/Become-The-Ultimate-Phychic/" class="article-date">
+  <time datetime="2020-10-17T18:30:38.000Z" itemprop="datePublished">2020-10-18</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/code/">code</a>
@@ -74,7 +74,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">325</span>
+            <span class="post-count">368</span>
         </span>
     </span>
 
@@ -96,15 +96,21 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>Description:<br>Given a positive number n &gt; 1 find the prime factor decomposition of n. The result will be a string with the following form :</p>
-<p> “(p1<strong>n1)(p2</strong>n2)…(pk**nk)”<br>where a ** b means a to the power of b</p>
-<p>with the p(i) in increasing order and n(i) empty if n(i) is 1.</p>
-<p>Example: n = 86240 should return “(2**5)(5)(7**2)(11)”</p>
+  <p>Description:<br>Let’s play Psychic<br>A box contains green, red, and blue balls. The total number of balls is given by n (0 &lt; n &lt; 50).</p>
+<p>Each ball has a mass that depends on the ball color. Green balls weigh 5kg, red balls weigh 4kg, and blue balls weigh 3kg.</p>
+<p>Given the total number of balls in the box, n, and a total mass, m, your task is to craft a program that will determine the quantities of each colored ball. Return a list of these quantities as the answer.</p>
+<p>Don’t forget that some combinations of n and m may have more than one possibility!</p>
+<p>Examples<br>Python</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Guess_it(<span class="number">3</span>, <span class="number">12</span>)</span><br><span class="line">[[<span class="number">0</span>,<span class="number">3</span>,<span class="number">0</span>], [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>]]</span><br></pre></td></tr></table></figure>
 <p>Elixir</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">defmodule</span> <span class="title">PrimesInNumbers</span></span> <span class="keyword">do</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">defp</span> <span class="title">factors</span></span>(n, k, acc) <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">cond</span> <span class="keyword">do</span></span><br><span class="line">      n &lt; k*k        -&gt; [n|acc]</span><br><span class="line">      rem(n, k) == 0 -&gt; factors(div(n, k), k, [k|acc])</span><br><span class="line">      <span class="symbol">:otherwise</span>     -&gt; factors(n, k+<span class="number">1</span>, acc)</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">prime_factors</span></span>(n), <span class="symbol">do:</span> </span><br><span class="line">    factors(abs(n), <span class="number">2</span>, []) </span><br><span class="line">      |&gt; Enum.reduce(Map.new, <span class="keyword">fn</span> c,acc -&gt; Map.update(acc, c, <span class="number">1</span>, &amp;(&amp;<span class="number">1+1</span>)) <span class="keyword">end</span>)</span><br><span class="line">      |&gt; Map.to_list</span><br><span class="line">      |&gt; Enum.map(<span class="keyword">fn</span> &#123;k, v&#125; -&gt; if v === <span class="number">1</span> <span class="keyword">do</span> <span class="string">&quot;(<span class="subst">#&#123;k&#125;</span>)&quot;</span> else <span class="string">&quot;(<span class="subst">#&#123;k&#125;</span>**<span class="subst">#&#123;v&#125;</span>)&quot;</span> <span class="keyword">end</span> <span class="keyword">end</span>)</span><br><span class="line">      |&gt; Enum.join(<span class="string">&quot;&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iex(<span class="number">1</span>)&gt; GuessIt.guess(<span class="number">3</span>, <span class="number">12</span>)</span><br><span class="line">[&#123;0,<span class="number">3,0</span>&#125;, &#123;<span class="number">1,1</span>,<span class="number">1</span>&#125;]</span><br></pre></td></tr></table></figure>
+<p>Note: Order of the returned elements is unimportant in the Elixir version.</p>
+<p>Assumptions<br>1.You can assume that all inputs are of the correct type<br>2.You can assume that the range of n will be [1, 50]<br>3.Each element of the returned list should return the quantities in the order of g, r, b.</p>
+<p>Elixir</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">defmodule</span> <span class="title">GuessIt</span></span> <span class="keyword">do</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">guess</span></span>(n, m) <span class="keyword">do</span></span><br><span class="line">	list(n)</span><br><span class="line">	|&gt; Enum.filter(<span class="keyword">fn</span> &#123;g,r,b&#125; -&gt; g*<span class="number">5</span>+r*<span class="number">4</span>+b*<span class="number">3</span> == m <span class="keyword">end</span>)</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">list</span></span>(n), <span class="symbol">do:</span> list(n, 0, 0, n)</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">list</span></span>(n, n, _, _), <span class="symbol">do:</span> [&#123;n, 0, 0&#125;]</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">list</span></span>(n, g, r, b) <span class="keyword">do</span></span><br><span class="line">	<span class="keyword">cond</span> <span class="keyword">do</span></span><br><span class="line">		r == n-g -&gt;</span><br><span class="line">			[&#123;g,r,b&#125;|list(n, g+<span class="number">1</span>, 0, n-g<span class="number">-1</span>)]</span><br><span class="line">		<span class="keyword">true</span> -&gt;</span><br><span class="line">			[&#123;g,r,b&#125;|list(n, g, r+<span class="number">1</span>, b<span class="number">-1</span>)]</span><br><span class="line">	<span class="keyword">end</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
 
 <p>Erlang</p>
-<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">-module</span><span class="params">(primes_in_numbers)</span>.</span><br><span class="line"><span class="keyword">-export</span><span class="params">([prime_factors/<span class="number">1</span>, factors/<span class="number">3</span>, count/<span class="number">3</span>, filter/<span class="number">1</span>])</span>.</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">prime_factors</span><span class="params">(N)</span> -&gt;</span></span><br><span class="line">	List = factors(N, <span class="number">2</span>, []),</span><br><span class="line">	R = count(List, <span class="number">1</span>, []),</span><br><span class="line">	Res = lists:map(fun filter/1, R),</span><br><span class="line">	binary_to_list(list_to_binary(Res)).</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">filter</span><span class="params">(&#123;K,V&#125;)</span> -&gt;</span></span><br><span class="line">	<span class="keyword">if</span></span><br><span class="line">		V == <span class="number">1</span> -&gt;</span><br><span class="line">			<span class="string">&quot;(&quot;</span> ++ (erlang:integer_to_list(K)) ++ <span class="string">&quot;)&quot;</span>;</span><br><span class="line">		<span class="literal">true</span> -&gt;</span><br><span class="line">			<span class="string">&quot;(&quot;</span> ++ (erlang:integer_to_list(K)) ++ <span class="string">&quot;**&quot;</span> ++ (erlang:integer_to_list(V)) ++ <span class="string">&quot;)&quot;</span></span><br><span class="line">	<span class="keyword">end</span>.</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">factors</span><span class="params">(N, K, List)</span> -&gt;</span></span><br><span class="line">	<span class="keyword">if</span></span><br><span class="line">		N &lt; K*K -&gt; </span><br><span class="line">			[N|List];</span><br><span class="line">		N <span class="keyword">rem</span> K == <span class="number">0</span> -&gt; </span><br><span class="line">			factors(N div K, K, [K|List]);</span><br><span class="line">		<span class="literal">true</span> -&gt;</span><br><span class="line">			factors(N, K+<span class="number">1</span>, List)</span><br><span class="line">	<span class="keyword">end</span>.</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">count</span><span class="params">([H1,H2|Tail], N, Rlist)</span> -&gt;</span></span><br><span class="line">	<span class="keyword">if</span></span><br><span class="line">		Tail == [] -&gt;</span><br><span class="line">			<span class="keyword">if</span></span><br><span class="line">				H1 == H2 -&gt;</span><br><span class="line">					[&#123;H1,N+<span class="number">1</span>&#125;|Rlist];</span><br><span class="line">				H1 /= H2 -&gt;</span><br><span class="line">					[&#123;H1,N&#125;,&#123;H2,<span class="number">1</span>&#125;|Rlist]</span><br><span class="line">			<span class="keyword">end</span>;</span><br><span class="line">		H1 == H2 -&gt;</span><br><span class="line">			count([H2|Tail], N+<span class="number">1</span>, Rlist);</span><br><span class="line">		H1 /= H2 -&gt;</span><br><span class="line">			count([H2|Tail], <span class="number">1</span>, [&#123;H1,N&#125;|Rlist])</span><br><span class="line">	<span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">-module</span><span class="params">(become_the_ultimate_phychic)</span>.</span><br><span class="line"><span class="keyword">-export</span><span class="params">([guess/<span class="number">2</span>])</span>.</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">guess</span><span class="params">(N, M)</span> -&gt;</span></span><br><span class="line">	List = list(N),</span><br><span class="line">	Res = lists:filter(<span class="keyword">fun</span> (&#123;G, R, B&#125;) -&gt; G*<span class="number">5</span>+R*<span class="number">4</span>+B*<span class="number">3</span> == M <span class="keyword">end</span>, List),</span><br><span class="line">	Res.</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">list</span><span class="params">(N)</span> -&gt;</span></span><br><span class="line">	list(N, <span class="number">0</span>, <span class="number">0</span>, N).</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">list</span><span class="params">(N, N, _, _)</span> -&gt;</span> [];</span><br><span class="line"><span class="function"><span class="title">list</span><span class="params">(N, G, R, B)</span> -&gt;</span></span><br><span class="line">	<span class="keyword">if</span> </span><br><span class="line">		R == N-G -&gt;</span><br><span class="line">			[&#123;G, R, B&#125;|list(N, G+<span class="number">1</span>, <span class="number">0</span>, N-G-<span class="number">1</span>)];</span><br><span class="line">		<span class="literal">true</span> -&gt;</span><br><span class="line">			[&#123;G, R, B&#125;|list(N, G, R+<span class="number">1</span>, B-<span class="number">1</span>)]</span><br><span class="line">	<span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
  
       <!-- reward -->
       
@@ -157,12 +163,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2020/10/17/Primes-in-numbers/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2020/10/18/Become-The-Ultimate-Phychic/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/codewars/" rel="tag">codewars</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/elixir/" rel="tag">elixir</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/erlang/" rel="tag">erlang</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/codewars/" rel="tag">codewars</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/elixir/" rel="tag">elixir</a></li></ul>
 
     </footer>
   </div>
@@ -170,19 +176,10 @@
    
   <nav class="article-nav">
     
-      <a href="/2020/10/18/Become-The-Ultimate-Phychic/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            Become The Ultimate Phychic
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/10/16/mplayer/" class="article-nav-link">
+      <a href="/2020/10/17/Primes-in-numbers/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">mplayer</div>
+        <div class="article-nav-title">Primes in numbers</div>
       </a>
     
   </nav>

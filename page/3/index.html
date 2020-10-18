@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+     
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      
+<section class="cover">
+    
+  <div class="cover-frame">
+    <div class="bg-box">
+      <img src="/images/2.jpg" alt="image frame" />
+    </div>
+    <div class="cover-inner text-center text-white">
+      <h1><a href="/"></a></h1>
+      <div id="subtitle-box">
+        
+          <span id="subtitle"></span>
+        
+      </div>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="cover-learn-more">
+    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
+  </div>
+</section>
+
+
+
+
+<!-- Subtitle -->
+
+<div id="main">
+  <section class="outer">
+  
+  
+
+<div class="notice" style="margin-top:50px">
+    <i class="ri-heart-fill"></i>
+    <div class="notice-content" id="broad"></div>
+</div>
+<script type="text/javascript">
+    fetch('https://v1.hitokoto.cn')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("broad").innerHTML = data.hitokoto;
+        })
+        .catch(console.error)
+</script>
+
+<style>
+    .notice {
+        padding: 20px;
+        border: 1px dashed #e6e6e6;
+        color: #f2f2f2;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background;
+        border-radius: 10px;
+    }
+
+    .notice i {
+        float: left;
+        color: #f2f2f2;
+        font-size: 16px;
+        padding-right: 10px;
+        vertical-align: middle;
+        margin-top: -2px;
+    }
+
+    .notice-content {
+        display: initial;
+        vertical-align: middle;
+    }
+</style>
+
+  
+  <article class="articles">
+    
+    
+    
+    
+    <article
+  id="post-ranger"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/10/14/ranger/"
+    >ranger</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/10/14/ranger/" class="article-date">
+  <time datetime="2020-10-14T12:09:46.000Z" itemprop="datePublished">2020-10-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><a target="_blank" rel="noopener" href="https://github.com/ranger/ranger/">ranger</a>是一个基于ncurses库的命令行文件管理器，有一个简单而简约的用户界面。它使用基本的vi式的导航键，能够预览文件和用默认程序打开它们。</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S ranger</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ranger --copy-config=all       <span class="comment">#生成配置文件</span></span><br><span class="line">./config/ranger</span><br><span class="line">commandr.py                    <span class="comment">#脚本文件可以自行添加修改</span></span><br><span class="line">commandr_full.py</span><br><span class="line">rc.conf                        <span class="comment">#快捷键，功能设置文件</span></span><br><span class="line">rifle.conf                     <span class="comment">#默认执行程序设置文件</span></span><br><span class="line">scope.sh                       <span class="comment">#预览脚本</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h4><p><font color=#9c9>将插件添加到目录~/.config/ranger/plugins/</font><br>MP3转换插件<a target="_blank" rel="noopener" href="https://github.com/madskjeldgaard/ranger-lame">https://github.com/madskjeldgaard/ranger-lame</a><br>SoX集成插件，用于管理，处理和转换音频文件<a target="_blank" rel="noopener" href="https://github.com/madskjeldgaard/ranger-sox">https://github.com/madskjeldgaard/ranger-sox</a><br>git附件插件<a target="_blank" rel="noopener" href="https://github.com/matze/ranger-annex">https://github.com/matze/ranger-annex</a><br>Ranger Devicons插件<a target="_blank" rel="noopener" href="https://github.com/alexanderjeurissen/ranger_devicons">https://github.com/alexanderjeurissen/ranger_devicons</a><br>ranger自动跳转插件<a target="_blank" rel="noopener" href="https://github.com/fdw/ranger-autojump">https://github.com/fdw/ranger-autojump</a><br>feedranger<a target="_blank" rel="noopener" href="https://github.com/stefandtw/feedranger">https://github.com/stefandtw/feedranger</a><br>fzf-marks(带有fzf的模糊书签)<a target="_blank" rel="noopener" href="https://github.com/laggardkernel/ranger-fzf-marks">https://github.com/laggardkernel/ranger-fzf-marks</a><br>ranger-cmus(与cmus音频播放器集成)<a target="_blank" rel="noopener" href="https://github.com/maximtrp/ranger-cmus">https://github.com/maximtrp/ranger-cmus</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6/" rel="tag">软件</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+</article>
+
+    
+    <article
+  id="post-st"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/10/14/st/"
+    >st</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/10/14/st/" class="article-date">
+  <time datetime="2020-10-14T12:09:40.000Z" itemprop="datePublished">2020-10-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><a target="_blank" rel="noopener" href="https://st.suckless.org/">st</a>是一个极轻量的虚拟终端</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git.suckless.org/st</span><br><span class="line"><span class="built_in">cd</span> st</span><br><span class="line">sudo make clean install</span><br></pre></td></tr></table></figure>
+
+<h4 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h4><p>pacth &lt; xxx.diff</p>
+<p><a target="_blank" rel="noopener" href="https://st.suckless.org/patches/alpha/">alpha</a>实现透明效果<br><a target="_blank" rel="noopener" href="https://st.suckless.org/patches/vim_browse/">vimBrowse</a>vim浏览补丁提供了在终端历史记录缓冲区中移动，使用类似于VIM的动作<br><a target="_blank" rel="noopener" href="https://st.suckless.org/patches/anysize/">anysize</a>可以使用任意大小字体<br><a target="_blank" rel="noopener" href="https://st.suckless.org/patches/hidecursor/">hidecursor</a>当有键盘操作时隐藏鼠标<br><a target="_blank" rel="noopener" href="https://st.suckless.org/patches/scrollback/">scrollback</a>可以用键盘回滚终端<br><a target="_blank" rel="noopener" href="https://st.suckless.org/patches/scrollback/">scrollback-mouse</a>可以用鼠标回滚终端<br><a target="_blank" rel="noopener" href="https://st.suckless.org/patches/dracula/">dracula</a>配色方案,应用后仅更改终端颜色</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6/" rel="tag">软件</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+</article>
+
+    
+    <article
+  id="post-dwm"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/10/14/dwm/"
+    >dwm</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/10/14/dwm/" class="article-date">
+  <time datetime="2020-10-14T12:01:19.000Z" itemprop="datePublished">2020-10-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><a target="_blank" rel="noopener" href="https://dwm.suckless.org/">dwm</a>是一个简洁的平铺式窗口管理器<br>配置简单，使用便捷，没有多少依赖，占用内存非常小</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git.suckless.org/dwm</span><br><span class="line"><span class="built_in">cd</span> dwm</span><br><span class="line">sudo make clean install</span><br></pre></td></tr></table></figure>
+<h4 id="搭配软件"><a href="#搭配软件" class="headerlink" title="搭配软件"></a>搭配软件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S rofi           <span class="comment">#弹出式窗口切换器</span></span><br><span class="line">sudo pacman -S picom          <span class="comment">#X的合成器,可以帮你设置透明度,阴影效果,窗口切换效果等</span></span><br><span class="line">sudo pacman -S alsa-utils     <span class="comment">#是Linux中提供声音设备驱动的内核组件</span></span><br><span class="line">sudo pacman -S feh            <span class="comment">#快速,轻量级的图像查看器</span></span><br><span class="line">sudo pacman -S ranger         <span class="comment">#具有VI键绑定的控制台文件管理器</span></span><br></pre></td></tr></table></figure>
+<h4 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h4><p>patch &lt; xxx.diff #打补丁</p>
+<p><a target="_blank" rel="noopener" href="https://dwm.suckless.org/patches/alpha/">alpha</a>使dwm的菜单栏变透明<br><a target="_blank" rel="noopener" href="https://dwm.suckless.org/patches/autostart/">autostart</a>在dwm启动时自动运行指定的脚本<br><a target="_blank" rel="noopener" href="https://dwm.suckless.org/patches/pertag/">pertag</a>保持每个标签的布局<br><a target="_blank" rel="noopener" href="https://dwm.suckless.org/patches/scratchpad/">scratchpad</a>生成一个可隐藏的所有标签共用的窗口可以当做便签</p>
+<h4 id="fcitx5"><a href="#fcitx5" class="headerlink" title="fcitx5"></a>fcitx5</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S fcitx5-im fcitx5-chinese-addons</span><br></pre></td></tr></table></figure>
+
+<h4 id="xinitrc的配置"><a href="#xinitrc的配置" class="headerlink" title=".xinitrc的配置"></a>.xinitrc的配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#fcitx5</span></span><br><span class="line">INPUT_METHOD  DEFAULT=fcitx5</span><br><span class="line">GTK_IM_MODULE DEFAULT=fcitx5</span><br><span class="line">QT_IM_MODULE  DEFAULT=fcitx5</span><br><span class="line">XMODIFIERS    DEFAULT=\@im=fcitx5</span><br><span class="line">fcitx5 &amp;</span><br><span class="line"></span><br><span class="line"><span class="comment">#picom</span></span><br><span class="line">picom &amp;</span><br><span class="line"></span><br><span class="line"><span class="comment">#dwm</span></span><br><span class="line"><span class="built_in">exec</span> dwm</span><br></pre></td></tr></table></figure>
+
+<h4 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h4><h5 id="emacs-daemon-sh"><a href="#emacs-daemon-sh" class="headerlink" title="emacs-daemon.sh"></a>emacs-daemon.sh</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">cd</span> ~/ &amp;&amp; emacs --daemon</span><br></pre></td></tr></table></figure>
+
+<h5 id="touchpad-sh"><a href="#touchpad-sh" class="headerlink" title="touchpad.sh"></a>touchpad.sh</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">id=`xinput list | grep <span class="string">&quot;Touchpad&quot;</span> | cut -d<span class="string">&#x27;=&#x27;</span> -f2 | cut -d<span class="string">&#x27;[&#x27;</span> -f1`</span><br><span class="line"></span><br><span class="line">flag=`xinput list-props <span class="variable">$id</span> | grep <span class="string">&quot;Device Enabled &quot;</span> | cut -c 24-24`</span><br><span class="line"><span class="keyword">if</span></span><br><span class="line">  [ <span class="string">&quot;<span class="variable">$flag</span>&quot;</span> = 0 ]; <span class="keyword">then</span></span><br><span class="line">  n=1</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  n=0</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">xinput set-prop <span class="variable">$id</span> <span class="string">&quot;Device Enabled&quot;</span> <span class="variable">$n</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="volup-sh"><a href="#volup-sh" class="headerlink" title="volup.sh"></a>volup.sh</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">amixer -qM <span class="built_in">set</span> Master 10%+ umute</span><br></pre></td></tr></table></figure>
+
+<h5 id="voldown-sh"><a href="#voldown-sh" class="headerlink" title="voldown.sh"></a>voldown.sh</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">amixer -qM <span class="built_in">set</span> Master 10%- umute</span><br></pre></td></tr></table></figure>
+
+<h5 id="wallpapers-sh"><a href="#wallpapers-sh" class="headerlink" title="wallpapers.sh"></a>wallpapers.sh</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">let</span> n=0</span><br><span class="line">files=(<span class="variable">$HOME</span>/wallpapers/*.jpg)</span><br><span class="line">count=<span class="variable">$&#123;#files[@]&#125;</span></span><br><span class="line"><span class="keyword">while</span> [ 1 ]</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">  <span class="built_in">let</span> <span class="string">&quot;n=<span class="subst">$((RANDOM %count)</span>)&quot;</span></span><br><span class="line">  file=<span class="string">&quot;<span class="variable">$&#123;files[$n]&#125;</span>&quot;</span></span><br><span class="line">  feh --bg-fill <span class="string">&quot;<span class="variable">$file</span>&quot;</span> &amp;</span><br><span class="line">  sleep 1m</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="autostart-sh"><a href="#autostart-sh" class="headerlink" title="autostart.sh"></a>autostart.sh</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash </span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">true</span> </span><br><span class="line"><span class="keyword">do</span></span><br><span class="line"><span class="function"><span class="title">print_date</span></span>()&#123;</span><br><span class="line">date <span class="string">&#x27;+%Y年%m月%d日 %H:%M&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">clock=$(date <span class="string">&#x27;+%I&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">case</span> <span class="string">&quot;<span class="variable">$clock</span>&quot;</span> <span class="keyword">in</span></span><br><span class="line">	<span class="string">&quot;00&quot;</span>) clock_icon=<span class="string">&quot;🕛&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;01&quot;</span>) clock_icon=<span class="string">&quot;🕐&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;02&quot;</span>) clock_icon=<span class="string">&quot;🕑&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;03&quot;</span>) clock_icon=<span class="string">&quot;🕒&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;04&quot;</span>) clock_icon=<span class="string">&quot;🕓&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;05&quot;</span>) clock_icon=<span class="string">&quot;🕔&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;06&quot;</span>) clock_icon=<span class="string">&quot;🕕&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;07&quot;</span>) clock_icon=<span class="string">&quot;🕖&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;08&quot;</span>) clock_icon=<span class="string">&quot;🕗&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;09&quot;</span>) clock_icon=<span class="string">&quot;🕘&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;10&quot;</span>) clock_icon=<span class="string">&quot;🕙&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;11&quot;</span>) clock_icon=<span class="string">&quot;🕚&quot;</span> ;;</span><br><span class="line">	<span class="string">&quot;12&quot;</span>) clock_icon=<span class="string">&quot;🕛&quot;</span> ;;</span><br><span class="line"><span class="keyword">esac</span></span><br><span class="line"></span><br><span class="line">LOCALTIME=$(date +<span class="string">&quot;🗓:%Y-%m-%d %u,<span class="variable">$&#123;clock_icon&#125;</span>:%H:%M&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">status_icon=<span class="string">&quot;🔋&quot;</span></span><br><span class="line">power=$(cat /sys/class/power_supply/BAT0/capacity)</span><br><span class="line">power_status=<span class="variable">$&#123;status_icon&#125;</span>:<span class="variable">$&#123;power&#125;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">vol=$(amixer get Master | tail -n1 | sed -r <span class="string">&#x27;s/.*\[(.*)%\].*/\1/&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$vol</span>&quot;</span> -eq <span class="string">&quot;0&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">    icon=<span class="string">&quot;🔇&quot;</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">&quot;<span class="variable">$vol</span>&quot;</span> -gt <span class="string">&quot;70&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">	icon=<span class="string">&quot;🔊&quot;</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">&quot;<span class="variable">$vol</span>&quot;</span> -lt <span class="string">&quot;30&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">	icon=<span class="string">&quot;🔈&quot;</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	icon=<span class="string">&quot;🔉&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">vol_status=<span class="string">&quot;<span class="variable">$icon</span>:<span class="variable">$vol</span>%&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">update</span></span>() &#123;</span><br><span class="line">    sum=0</span><br><span class="line">    <span class="keyword">for</span> arg; <span class="keyword">do</span></span><br><span class="line">        <span class="built_in">read</span> -r i &lt; <span class="string">&quot;<span class="variable">$arg</span>&quot;</span></span><br><span class="line">        sum=$(( sum + i ))</span><br><span class="line">    <span class="keyword">done</span></span><br><span class="line">    cache=<span class="variable">$&#123;XDG_CACHE_HOME:-<span class="variable">$HOME</span>/.cache&#125;</span>/<span class="variable">$&#123;1##*/&#125;</span></span><br><span class="line">    [ -f <span class="string">&quot;<span class="variable">$cache</span>&quot;</span> ] &amp;&amp; <span class="built_in">read</span> -r old &lt; <span class="string">&quot;<span class="variable">$cache</span>&quot;</span> || old=0</span><br><span class="line">    <span class="built_in">printf</span> %d\\n <span class="string">&quot;<span class="variable">$sum</span>&quot;</span> &gt; <span class="string">&quot;<span class="variable">$cache</span>&quot;</span></span><br><span class="line">    <span class="built_in">printf</span> %d\\n $(( sum - old ))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">RX=$(update /sys/class/net/[ew]*/statistics/rx_bytes)</span><br><span class="line">TX=$(update /sys/class/net/[ew]*/statistics/tx_bytes)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 换算单位</span></span><br><span class="line"><span class="keyword">if</span> [[ <span class="variable">$RX</span> -lt 1024 ]];<span class="keyword">then</span></span><br><span class="line">    <span class="comment"># 如果接收速率小于1024,则单位为B/s</span></span><br><span class="line">    RX=<span class="string">&quot;<span class="variable">$&#123;RX&#125;</span>B/s&quot;</span></span><br><span class="line"><span class="keyword">elif</span> [[ <span class="variable">$RX</span> -gt 1048576 ]];<span class="keyword">then</span></span><br><span class="line">    <span class="comment"># 否则如果接收速率大于 1048576,则改变单位为MB/s</span></span><br><span class="line">    RX=$(<span class="built_in">echo</span> <span class="variable">$RX</span> | awk <span class="string">&#x27;&#123;print $1/1048576 &quot;MB/s&quot;&#125;&#x27;</span>)</span><br><span class="line">    RX=$(<span class="built_in">printf</span> <span class="string">&quot;%.2fMB/s&quot;</span> <span class="variable">$RX</span>) </span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="comment"># 否则如果接收速率大于1024但小于1048576,则单位为KB/s</span></span><br><span class="line">    RX=$(<span class="built_in">echo</span> <span class="variable">$RX</span> | awk <span class="string">&#x27;&#123;print $1/1024 &quot;KB/s&quot;&#125;&#x27;</span>)</span><br><span class="line">    RX=$(<span class="built_in">printf</span> <span class="string">&quot;%.2fKB/s&quot;</span> <span class="variable">$RX</span>)</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 换算单位</span></span><br><span class="line"><span class="keyword">if</span> [[ <span class="variable">$TX</span> -lt 1024 ]];<span class="keyword">then</span></span><br><span class="line">    <span class="comment"># 如果发送速率小于1024,则单位为B/s</span></span><br><span class="line">    TX=<span class="string">&quot;<span class="variable">$&#123;TX&#125;</span>B/s&quot;</span></span><br><span class="line"><span class="keyword">elif</span> [[ <span class="variable">$TX</span> -gt 1048576 ]];<span class="keyword">then</span></span><br><span class="line">    <span class="comment"># 否则如果发送速率大于 1048576,则改变单位为MB/s</span></span><br><span class="line">    TX=$(<span class="built_in">echo</span> <span class="variable">$TX</span> | awk <span class="string">&#x27;&#123;print $1/1048576 &quot;MB/s&quot;&#125;&#x27;</span>)</span><br><span class="line">    TX=$(<span class="built_in">printf</span> <span class="string">&quot;%.2fMB/s&quot;</span> <span class="variable">$TX</span>)</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="comment"># 否则如果发送速率大于1024但小于1048576,则单位为KB/s</span></span><br><span class="line">    TX=$(<span class="built_in">echo</span> <span class="variable">$TX</span> | awk <span class="string">&#x27;&#123;print $1/1024 &quot;KB/s&quot;&#125;&#x27;</span>)</span><br><span class="line">    TX=$(<span class="built_in">printf</span> <span class="string">&quot;%.2fKB/s&quot;</span> <span class="variable">$TX</span>)</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#TX_f=$(printf &quot;%.2&quot; $TX)</span></span><br><span class="line"><span class="comment">#RX_f=$(printf &quot;%.2&quot; $RX)</span></span><br><span class="line"></span><br><span class="line">NetRraf=<span class="string">&quot;⏫:<span class="variable">$TX</span> ⏬:<span class="variable">$RX</span>&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">CHARGE=$(cat /sys/class/power_supply/BAT0/capacity)</span><br><span class="line">STATUS=$(cat /sys/class/power_supply/BAT0/status)</span><br><span class="line"></span><br><span class="line">total=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $2&#125;&#x27;</span>)</span><br><span class="line">used=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $3&#125;&#x27;</span>)</span><br><span class="line">free=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $4&#125;&#x27;</span>)</span><br><span class="line">shared=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $5&#125;&#x27;</span>)</span><br><span class="line">buff=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $6&#125;&#x27;</span>)</span><br><span class="line">available=$(free -m | sed -n <span class="string">&#x27;2p&#x27;</span> | awk <span class="string">&#x27;&#123;print $7&#125;&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">max_light=$(cat /sys/class/backlight/amdgpu_bl0/max_brightness)</span><br><span class="line">light=$(cat /sys/class/backlight/amdgpu_bl0/brightness)</span><br><span class="line">light_status=☀:$(<span class="built_in">echo</span> <span class="variable">$light</span> <span class="variable">$max_light</span> | awk <span class="string">&#x27;&#123;printf &quot;%d\n&quot;,$1/$2*100&#125;&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 得到ip</span></span><br><span class="line">ip=`ip addr show eth0 | awk <span class="string">&#x27; !/127.0.0.1/ &amp;&amp; /inet/ &#123; gsub(/\/.*/, &quot;&quot;, $2); print &quot;&quot;$2 &#125;&#x27;</span>`</span><br><span class="line"><span class="comment">#echo $ip</span></span><br><span class="line">ip_index=`<span class="built_in">echo</span> <span class="variable">$ip</span> | awk -F <span class="string">&#x27;.&#x27;</span> <span class="string">&#x27;&#123;print $4&#125;&#x27;</span>`</span><br><span class="line"></span><br><span class="line"><span class="comment">#计算cpu使用率</span></span><br><span class="line">cpu=`top -b -n1 | fgrep <span class="string">&quot;Cpu(s)&quot;</span> | tail -1 | awk -F<span class="string">&#x27;id,&#x27;</span> <span class="string">&#x27;&#123;split($1, vs, &quot;,&quot;); v=vs[length(vs)]; sub(/\s+/, &quot;&quot;, v);sub(/\s+/, &quot;&quot;, v); printf &quot;%d&quot;, 100-v;&#125;&#x27;</span>`</span><br><span class="line"><span class="comment">#echo $cpu</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#统计内存使用率</span></span><br><span class="line">mem_used_persent=`free -m | awk -F <span class="string">&#x27;[ :]+&#x27;</span> <span class="string">&#x27;NR==2&#123;printf &quot;%d&quot;, ($2-$7)/$2*100&#125;&#x27;</span>`</span><br><span class="line"><span class="comment">#echo $mem_used_persent</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">xsetroot -name <span class="string">&quot;<span class="variable">$&#123;NetRraf&#125;</span>,<span class="variable">$&#123;available&#125;</span>M,<span class="variable">$&#123;cpu&#125;</span>%,<span class="variable">$&#123;LOCALTIME&#125;</span>,<span class="variable">$&#123;light_status&#125;</span>%,<span class="variable">$&#123;vol_status&#125;</span>,<span class="variable">$&#123;power_status&#125;</span>%&quot;</span> </span><br><span class="line">sleep 1</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6/" rel="tag">软件</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+</article>
+
+    
+    <article
+  id="post-网页收藏"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/10/14/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F/"
+    >网页收藏</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/10/14/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F/" class="article-date">
+  <time datetime="2020-10-13T19:49:01.000Z" itemprop="datePublished">2020-10-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%94%B6%E8%97%8F/">收藏</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="Makedown语法说明"><a href="#Makedown语法说明" class="headerlink" title="Makedown语法说明"></a>Makedown语法说明</h3><p><a target="_blank" rel="noopener" href="http://www.wowubuntu.com/markdown/index/">http://www.wowubuntu.com/markdown/index/</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BD%91%E9%A1%B5/" rel="tag">网页</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+</article>
+
+    
+    <article
+  id="post-hello-world"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/10/14/hello-world/"
+    >Hello World</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/10/14/hello-world/" class="article-date">
+  <time datetime="2020-10-13T19:36:56.249Z" itemprop="datePublished">2020-10-14</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+   
+   
+</article>
+
+    
+  </article>
+  
+
+  
+  <nav class="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/2/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+  
+</section>
+</div>
+
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020
+        <i class="ri-heart-fill heart_icon"></i> John Doe
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt=""></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/playlist">音乐</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+<script src="/js/dz.js"></script>
+
+
+
+    
+  </div>
+</body>
+
+</html>
