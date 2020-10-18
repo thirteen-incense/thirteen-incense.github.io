@@ -28,6 +28,20 @@
       </tags>
   </entry>
   <entry>
+    <title>aria2</title>
+    <url>/2020/10/14/aria2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/aria2/aria2">aria2</a>是一个轻量级的多协议和多源命令行下载工具，它支持HTTP/HTTPS，FTP，SFTP，BitTorrent和Metalink协议</p>
+<p><a href="http://aria2.github.io/manual/en/html/index.html">在线手册</a></p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S aria2</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Primes in numbers</title>
     <url>/2020/10/17/Primes-in-numbers/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>Description:<br>Given a positive number n &gt; 1 find the prime factor decomposition of n. The result will be a string with the following form :</p>
@@ -47,20 +61,6 @@
         <tag>codewars</tag>
         <tag>elixir</tag>
         <tag>erlang</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>aria2</title>
-    <url>/2020/10/14/aria2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/aria2/aria2">aria2</a>是一个轻量级的多协议和多源命令行下载工具，它支持HTTP/HTTPS，FTP，SFTP，BitTorrent和Metalink协议</p>
-<p><a href="http://aria2.github.io/manual/en/html/index.html">在线手册</a></p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S aria2</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
       </tags>
   </entry>
   <entry>
@@ -109,6 +109,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2020/10/14/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>ffmpeg</title>
     <url>/2020/10/14/ffmpeg/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S ffmpeg</span><br></pre></td></tr></table></figure>
@@ -132,30 +150,28 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/10/14/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>jepgoptim</title>
     <url>/2020/10/14/jepgoptim/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/tjko/jpegoptim">jepgoptim</a>图片优化的开源小工具，有较好的图片压缩效果</p>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S jpegoptim</span><br></pre></td></tr></table></figure>
 
 <h4 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-d &lt;path&gt;, --dest=&lt;path&gt;             <span class="comment">#保存优化后的文件到指定目录(默认为覆盖源文件)</span></span><br><span class="line">-f, --force                          <span class="comment">#强制优化</span></span><br><span class="line">-m&lt;quality&gt;, --max=&lt;quality&gt;         <span class="comment">#设置压缩质量(1~100)</span></span><br><span class="line">-n, --noaction                       <span class="comment">#只打印优化结果</span></span><br><span class="line">-S&lt;size&gt;, --size=&lt;size&gt;              <span class="comment">#尝试压缩到指定大小</span></span><br><span class="line">-T&lt;treshold&gt;, --threshold=&lt;treshold&gt; <span class="comment">#阀值(%),到达后不再优化</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>powerpill</title>
+    <url>/2020/10/14/powerpill/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://wiki.archlinux.org/index.php/powerpill">powerpill</a>Powerpill是一个pacman包装器，使用并行和分段下载来尝试加快Pacman的下载速度</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S powerpill</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p><font color=#9c9>/etc/powerpill/powerpill.json</font> #配置文件,您可以根据自己的喜好进行编辑</p>
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#操作同pacman相同</span></span><br><span class="line">sudo powerpill -S      <span class="comment">#下载</span></span><br><span class="line">sudo powerpill -Syu    <span class="comment">#更新系统</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -180,13 +196,11 @@
       </tags>
   </entry>
   <entry>
-    <title>powerpill</title>
-    <url>/2020/10/14/powerpill/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://wiki.archlinux.org/index.php/powerpill">powerpill</a>Powerpill是一个pacman包装器，使用并行和分段下载来尝试加快Pacman的下载速度</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S powerpill</span><br></pre></td></tr></table></figure>
+    <title>qbittorrent</title>
+    <url>/2020/10/14/qbittorrent/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/qbittorrent/qBittorrent">qbittorrent</a>是由Arvid Norberg使用C++/Qt编程的bittorrent客户端</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S qbittorrent</span><br></pre></td></tr></table></figure>
 
-<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p><font color=#9c9>/etc/powerpill/powerpill.json</font> #配置文件,您可以根据自己的喜好进行编辑</p>
-<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#操作同pacman相同</span></span><br><span class="line">sudo powerpill -S      <span class="comment">#下载</span></span><br><span class="line">sudo powerpill -Syu    <span class="comment">#更新系统</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -213,24 +227,18 @@
       </tags>
   </entry>
   <entry>
-    <title>qbittorrent</title>
-    <url>/2020/10/14/qbittorrent/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/qbittorrent/qBittorrent">qbittorrent</a>是由Arvid Norberg使用C++/Qt编程的bittorrent客户端</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S qbittorrent</span><br></pre></td></tr></table></figure>
+    <title>rofi</title>
+    <url>/2020/10/14/rofi/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/davatorium/rofi">rofi</a>窗口切换器,应用程序启动器和dmenu替换</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S rofi</span><br></pre></td></tr></table></figure>
 
-]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>scrot</title>
-    <url>/2020/10/14/scrot/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>scrot是一个命名行截图软件支持延时截屏,调整品质/大小,命令行传递等功能</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scrot                         <span class="comment">#截下整个桌面</span></span><br><span class="line">scrot /home/code/1.jpg        <span class="comment">#命名并保存到指定文件夹</span></span><br><span class="line">scrot -s                      <span class="comment">#手动框选截图</span></span><br><span class="line">scrot -d NUM                  <span class="comment">#延迟NUM秒后截屏</span></span><br><span class="line">scrot -d NUM -c               <span class="comment">#显示延时的倒计时</span></span><br><span class="line">scrot -q NUM                  <span class="comment">#调整截屏质量(1~100,默认75)</span></span><br><span class="line">scrot -t NUM                  <span class="comment">#调整截屏尺寸(1~100)</span></span><br><span class="line">scrot -e <span class="string">&#x27;mv $f ~/wallpaper&#x27;</span>  <span class="comment">#将截取的截屏传递给其它命令($f)</span></span><br></pre></td></tr></table></figure>
+<h4 id="生成配置文件"><a href="#生成配置文件" class="headerlink" title="生成配置文件"></a>生成配置文件</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir -p ~/.config/rofi</span><br><span class="line">rofi -dump-config &gt; ~/.config/rofi/config.rasi</span><br></pre></td></tr></table></figure>
+
+<p>主题编写规则<a href="https://github.com/davatorium/rofi/blob/next/doc/rofi-theme.5.markdown">https://github.com/davatorium/rofi/blob/next/doc/rofi-theme.5.markdown</a></p>
+<h4 id="使用配置"><a href="#使用配置" class="headerlink" title="使用配置"></a>使用配置</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rofi -show run  -theme one-theme.rasi</span><br><span class="line">rofi -show drun -theme one-theme.rasi</span><br></pre></td></tr></table></figure>
+
+<p>主题资料库<a href="https://github.com/davatorium/rofi-themes">https://github.com/davatorium/rofi-themes</a></p>
+<h4 id="官方主题"><a href="#官方主题" class="headerlink" title="官方主题"></a>官方主题</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rofi-theme-selector       <span class="comment">#Alt+A确认</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
@@ -256,18 +264,10 @@
       </tags>
   </entry>
   <entry>
-    <title>rofi</title>
-    <url>/2020/10/14/rofi/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/davatorium/rofi">rofi</a>窗口切换器,应用程序启动器和dmenu替换</p>
-<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S rofi</span><br></pre></td></tr></table></figure>
-
-<h4 id="生成配置文件"><a href="#生成配置文件" class="headerlink" title="生成配置文件"></a>生成配置文件</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir -p ~/.config/rofi</span><br><span class="line">rofi -dump-config &gt; ~/.config/rofi/config.rasi</span><br></pre></td></tr></table></figure>
-
-<p>主题编写规则<a href="https://github.com/davatorium/rofi/blob/next/doc/rofi-theme.5.markdown">https://github.com/davatorium/rofi/blob/next/doc/rofi-theme.5.markdown</a></p>
-<h4 id="使用配置"><a href="#使用配置" class="headerlink" title="使用配置"></a>使用配置</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rofi -show run  -theme one-theme.rasi</span><br><span class="line">rofi -show drun -theme one-theme.rasi</span><br></pre></td></tr></table></figure>
-
-<p>主题资料库<a href="https://github.com/davatorium/rofi-themes">https://github.com/davatorium/rofi-themes</a></p>
-<h4 id="官方主题"><a href="#官方主题" class="headerlink" title="官方主题"></a>官方主题</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rofi-theme-selector       <span class="comment">#Alt+A确认</span></span><br></pre></td></tr></table></figure>
+    <title>scrot</title>
+    <url>/2020/10/14/scrot/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>scrot是一个命名行截图软件支持延时截屏,调整品质/大小,命令行传递等功能</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scrot                         <span class="comment">#截下整个桌面</span></span><br><span class="line">scrot /home/code/1.jpg        <span class="comment">#命名并保存到指定文件夹</span></span><br><span class="line">scrot -s                      <span class="comment">#手动框选截图</span></span><br><span class="line">scrot -d NUM                  <span class="comment">#延迟NUM秒后截屏</span></span><br><span class="line">scrot -d NUM -c               <span class="comment">#显示延时的倒计时</span></span><br><span class="line">scrot -q NUM                  <span class="comment">#调整截屏质量(1~100,默认75)</span></span><br><span class="line">scrot -t NUM                  <span class="comment">#调整截屏尺寸(1~100)</span></span><br><span class="line">scrot -e <span class="string">&#x27;mv $f ~/wallpaper&#x27;</span>  <span class="comment">#将截取的截屏传递给其它命令($f)</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录</category>
