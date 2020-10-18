@@ -118,6 +118,21 @@
       </tags>
   </entry>
   <entry>
+    <title>jepgoptim</title>
+    <url>/2020/10/14/jepgoptim/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/tjko/jpegoptim">jepgoptim</a>图片优化的开源小工具，有较好的图片压缩效果</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S jpegoptim</span><br></pre></td></tr></table></figure>
+
+<h4 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-d &lt;path&gt;, --dest=&lt;path&gt;             <span class="comment">#保存优化后的文件到指定目录(默认为覆盖源文件)</span></span><br><span class="line">-f, --force                          <span class="comment">#强制优化</span></span><br><span class="line">-m&lt;quality&gt;, --max=&lt;quality&gt;         <span class="comment">#设置压缩质量(1~100)</span></span><br><span class="line">-n, --noaction                       <span class="comment">#只打印优化结果</span></span><br><span class="line">-S&lt;size&gt;, --size=&lt;size&gt;              <span class="comment">#尝试压缩到指定大小</span></span><br><span class="line">-T&lt;treshold&gt;, --threshold=&lt;treshold&gt; <span class="comment">#阀值(%),到达后不再优化</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>feh</title>
     <url>/2020/10/14/feh/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://wiki.archlinux.org/index.php/Feh">feh</a>是一款轻巧而功能强大的图像查看器，也可用于管理缺少此类功能的独立窗口管理器的桌面壁纸</p>
@@ -148,21 +163,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>jepgoptim</title>
-    <url>/2020/10/14/jepgoptim/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/tjko/jpegoptim">jepgoptim</a>图片优化的开源小工具，有较好的图片压缩效果</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo pacman -S jpegoptim</span><br></pre></td></tr></table></figure>
-
-<h4 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-d &lt;path&gt;, --dest=&lt;path&gt;             <span class="comment">#保存优化后的文件到指定目录(默认为覆盖源文件)</span></span><br><span class="line">-f, --force                          <span class="comment">#强制优化</span></span><br><span class="line">-m&lt;quality&gt;, --max=&lt;quality&gt;         <span class="comment">#设置压缩质量(1~100)</span></span><br><span class="line">-n, --noaction                       <span class="comment">#只打印优化结果</span></span><br><span class="line">-S&lt;size&gt;, --size=&lt;size&gt;              <span class="comment">#尝试压缩到指定大小</span></span><br><span class="line">-T&lt;treshold&gt;, --threshold=&lt;treshold&gt; <span class="comment">#阀值(%),到达后不再优化</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
   </entry>
   <entry>
     <title>mplayer</title>
@@ -210,6 +210,35 @@
       </tags>
   </entry>
   <entry>
+    <title>st</title>
+    <url>/2020/10/14/st/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://st.suckless.org/">st</a>是一个极轻量的虚拟终端</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git.suckless.org/st</span><br><span class="line"><span class="built_in">cd</span> st</span><br><span class="line">sudo make clean install</span><br></pre></td></tr></table></figure>
+
+<h4 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h4><p>pacth &lt; xxx.diff</p>
+<p><a href="https://st.suckless.org/patches/alpha/">alpha</a>实现透明效果<br><a href="https://st.suckless.org/patches/vim_browse/">vimBrowse</a>vim浏览补丁提供了在终端历史记录缓冲区中移动，使用类似于VIM的动作<br><a href="https://st.suckless.org/patches/anysize/">anysize</a>可以使用任意大小字体<br><a href="https://st.suckless.org/patches/hidecursor/">hidecursor</a>当有键盘操作时隐藏鼠标<br><a href="https://st.suckless.org/patches/scrollback/">scrollback</a>可以用键盘回滚终端<br><a href="https://st.suckless.org/patches/scrollback/">scrollback-mouse</a>可以用鼠标回滚终端<br><a href="https://st.suckless.org/patches/dracula/">dracula</a>配色方案,应用后仅更改终端颜色</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>scrot</title>
+    <url>/2020/10/14/scrot/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>scrot是一个命名行截图软件支持延时截屏,调整品质/大小,命令行传递等功能</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scrot                         <span class="comment">#截下整个桌面</span></span><br><span class="line">scrot /home/code/1.jpg        <span class="comment">#命名并保存到指定文件夹</span></span><br><span class="line">scrot -s                      <span class="comment">#手动框选截图</span></span><br><span class="line">scrot -d NUM                  <span class="comment">#延迟NUM秒后截屏</span></span><br><span class="line">scrot -d NUM -c               <span class="comment">#显示延时的倒计时</span></span><br><span class="line">scrot -q NUM                  <span class="comment">#调整截屏质量(1~100,默认75)</span></span><br><span class="line">scrot -t NUM                  <span class="comment">#调整截屏尺寸(1~100)</span></span><br><span class="line">scrot -e <span class="string">&#x27;mv $f ~/wallpaper&#x27;</span>  <span class="comment">#将截取的截屏传递给其它命令($f)</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ranger</title>
     <url>/2020/10/14/ranger/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://github.com/ranger/ranger/">ranger</a>是一个基于ncurses库的命令行文件管理器，有一个简单而简约的用户界面。它使用基本的vi式的导航键，能够预览文件和用默认程序打开它们。</p>
@@ -239,35 +268,6 @@
 
 <p>主题资料库<a href="https://github.com/davatorium/rofi-themes">https://github.com/davatorium/rofi-themes</a></p>
 <h4 id="官方主题"><a href="#官方主题" class="headerlink" title="官方主题"></a>官方主题</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rofi-theme-selector       <span class="comment">#Alt+A确认</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>scrot</title>
-    <url>/2020/10/14/scrot/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>scrot是一个命名行截图软件支持延时截屏,调整品质/大小,命令行传递等功能</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scrot                         <span class="comment">#截下整个桌面</span></span><br><span class="line">scrot /home/code/1.jpg        <span class="comment">#命名并保存到指定文件夹</span></span><br><span class="line">scrot -s                      <span class="comment">#手动框选截图</span></span><br><span class="line">scrot -d NUM                  <span class="comment">#延迟NUM秒后截屏</span></span><br><span class="line">scrot -d NUM -c               <span class="comment">#显示延时的倒计时</span></span><br><span class="line">scrot -q NUM                  <span class="comment">#调整截屏质量(1~100,默认75)</span></span><br><span class="line">scrot -t NUM                  <span class="comment">#调整截屏尺寸(1~100)</span></span><br><span class="line">scrot -e <span class="string">&#x27;mv $f ~/wallpaper&#x27;</span>  <span class="comment">#将截取的截屏传递给其它命令($f)</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>记录</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>st</title>
-    <url>/2020/10/14/st/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><a href="https://st.suckless.org/">st</a>是一个极轻量的虚拟终端</p>
-<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git.suckless.org/st</span><br><span class="line"><span class="built_in">cd</span> st</span><br><span class="line">sudo make clean install</span><br></pre></td></tr></table></figure>
-
-<h4 id="补丁"><a href="#补丁" class="headerlink" title="补丁"></a>补丁</h4><p>pacth &lt; xxx.diff</p>
-<p><a href="https://st.suckless.org/patches/alpha/">alpha</a>实现透明效果<br><a href="https://st.suckless.org/patches/vim_browse/">vimBrowse</a>vim浏览补丁提供了在终端历史记录缓冲区中移动，使用类似于VIM的动作<br><a href="https://st.suckless.org/patches/anysize/">anysize</a>可以使用任意大小字体<br><a href="https://st.suckless.org/patches/hidecursor/">hidecursor</a>当有键盘操作时隐藏鼠标<br><a href="https://st.suckless.org/patches/scrollback/">scrollback</a>可以用键盘回滚终端<br><a href="https://st.suckless.org/patches/scrollback/">scrollback-mouse</a>可以用鼠标回滚终端<br><a href="https://st.suckless.org/patches/dracula/">dracula</a>配色方案,应用后仅更改终端颜色</p>
 ]]></content>
       <categories>
         <category>记录</category>
